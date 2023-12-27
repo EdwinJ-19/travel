@@ -27,6 +27,6 @@ const initSlider = () =>{
     });
 }
 
-// function btn(){
-//     window.location.href='hotel'
-// }
+function btn(){
+    window.location.href='hotelacc'
+}

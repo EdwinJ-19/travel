@@ -21,10 +21,6 @@
             <img src="{%static 'img/T&T.png'%}" style="width: 5rem;">
             <!-- <h1>Travel & Tourism</h1> -->
         </div>
-        <div class="search">
-            <input type="search" placeholder="Enter your Search">
-            <button type="button">Search</button>
-        </div>
         <div class="nav-button">
         <ul>
             <li><a href="#">Home</a></li>
@@ -42,6 +38,28 @@
         </ul>
         </div>
     </nav>
+    <!--Center Box-->
+        <div class="search-box">
+            <div class="search">
+                <input type="search" placeholder="Enter your Search">
+            </div>
+            <div class="check-in">
+                <input type="text" placeholder="Check-In" onfocus="(this.type=date)" min="2023-12-28" max="2024-01-28">
+            </div>
+            <div class="check-out">
+                <input type="text" placeholder="Check-Out" onfocus="(this.type=date)" min="2023-12-30" max="2024-01-30">
+            </div>
+            <div class="s-g">
+                <select name="guest" id="guest">
+                    <option value="Room?">Guest?</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select> 
+            </div>
+            <button type="button">Search</button>
+        </div>
 
     <container>
         <div class="card-1">
@@ -94,51 +112,45 @@
 
                         <div class="vertical-box">
 
-                            <div class="check">
-                                <h2>Check-In/Check-Out</h2>
-                                <input type="text" placeholder="Check-In" onfocus="(this.type = 'date')">
-                                <input type="text" placeholder="Check-Out" onfocus="(this.type = 'date')">
-                                <input type="text" placeholder="Guest?" onfocus="(this.type='number')" max="1" class="g"> 
-                                <button type="button">Check Availability?</button>
-                            </div>
-
-                            <div class="rating-cleanliness">
-                                <h2>Review</h2>
-                                <div class="couples">
-                                    <h3>Couples: </h3>
-                                    <div class="r" style="margin-top: 1rem; margin-left: 5rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star-half-stroke checked"></i></span>
-                                    </div>
-                                </div>
-                                <div class="families">
-                                    <h3>Families: </h3>
-                                    <div class="r-1" style="margin-top: 1.1rem; margin-left: 5rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star-half-stroke checked"></i></span>
-                                    </div>
-                                </div>
-                                <div class="solo">
-                                    <h3>Solo: </h3>
-                                    <div class="r-1" style="margin-top: 1.1rem; margin-left: 3rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star-half-stroke checked"></i></span>
-                                    </div>
-                                </div>
-                            </div>
-
                             <div class="room">
                                 <h2>Room</h2>
                                 <div class="ac" style="margin-top: -0.6rem;">
+                                    <i class="fa-solid fa-snowflake"></i>
+                                    <p>Air-Conditioned</p>
+                                </div>
+                                <div class="as">
+                                    <i class="fa-solid fa-van-shuttle"></i>
+                                    <p>Airport Shuttle</p>
+                                </div>
+                                <div class="cf">
+                                    <i class="fa-solid fa-baby-carriage"></i>
+                                    <p>Child Friendly</p>
+                                </div>
+                                <div class="ac">
+                                    <i class="fa-solid fa-snowflake"></i>
+                                    <p>Air-Conditioned</p>
+                                </div>
+                                <div class="as">
+                                    <i class="fa-solid fa-van-shuttle"></i>
+                                    <p>Airport Shuttle</p>
+                                </div>
+                                <div class="cf">
+                                    <i class="fa-solid fa-baby-carriage"></i>
+                                    <p>Child Friendly</p>
+                                </div>
+                                <div class="ac">
+                                    <i class="fa-solid fa-snowflake"></i>
+                                    <p>Air-Conditioned</p>
+                                </div>
+                                <div class="as">
+                                    <i class="fa-solid fa-van-shuttle"></i>
+                                    <p>Airport Shuttle</p>
+                                </div>
+                                <div class="cf">
+                                    <i class="fa-solid fa-baby-carriage"></i>
+                                    <p>Child Friendly</p>
+                                </div>
+                                <div class="ac">
                                     <i class="fa-solid fa-snowflake"></i>
                                     <p>Air-Conditioned</p>
                                 </div>
@@ -157,7 +169,7 @@
             </div>
         </div>
         <!--Add more card here below, and in css change the class name-->
-        <div class="card-2">
+        <!-- <div class="card-2">
             <div class="left">
                 <div class="main">
                     <div class="main-head">
@@ -201,58 +213,6 @@
                         There's a contemporary, cafeteria-style dining area with a bar and a lounge.</p>
 
                         <div class="vertical-box">
-
-                            <div class="check">
-                                <h2>Check-In/Check-Out</h2>
-                                <input type="text" placeholder="Check-In" onfocus="(this.type = 'date')">
-                                <input type="text" placeholder="Check-Out" onfocus="(this.type = 'date')">
-                                <input type="text" placeholder="Guest?" onfocus="(this.type='number')" max="1" class="g"> 
-                                <button type="button">Check Availability?</button>
-                            </div>
-
-                            <div class="rating-cleanliness">
-                                <h2>Review</h2>
-                                <div class="couples">
-                                    <h3>Couples: </h3>
-                                    <div class="r" style="margin-top: 1rem; margin-left: 5rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-regular fa-star"></i></span>
-                                    </div>
-                                </div>
-                                <div class="families">
-                                    <h3>Families: </h3>
-                                    <div class="r-1" style="margin-top: 1.1rem; margin-left: 5rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-regular fa-star"></i></span>
-                                    </div>
-                                </div>
-                                <div class="solo">
-                                    <h3>Solo: </h3>
-                                    <div class="r-1" style="margin-top: 1.1rem; margin-left: 3rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-regular fa-star"></i></span>
-                                    </div>
-                                </div>
-                                <div class="business">
-                                    <h3>Business: </h3>
-                                    <div class="r-1" style="margin-top: 1.1rem; margin-left: 5.2rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-regular fa-star"></i></span>
-                                    </div>
-                                </div>
-                            </div>
 
                             <div class="room">
                                 <h2>Room</h2>
@@ -338,58 +298,6 @@
                         Guests have use of the resort's leisure centre, offering a kids' program with activities, plus a pool with a slide, and a 3-storey soft play area. There's also a sauna and a steam room, a spa, a golf course and a fitness centre. There are 4 restaurants (including Scottish and Italian eateries), plus 3 bars and an entertainment program.</p>
 
                         <div class="vertical-box">
-
-                            <div class="check">
-                                <h2>Check-In/Check-Out</h2>
-                                <input type="text" placeholder="Check-In" onfocus="(this.type = 'date')">
-                                <input type="text" placeholder="Check-Out" onfocus="(this.type = 'date')">
-                                <input type="text" placeholder="Guest?" onfocus="(this.type='number')" max="1" class="g"> 
-                                <button type="button">Check Availability?</button>
-                            </div>
-
-                            <div class="rating-cleanliness">
-                                <h2>Review</h2>
-                                <div class="couples">
-                                    <h3>Couples: </h3>
-                                    <div class="r" style="margin-top: 1rem; margin-left: 5rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star-half-stroke checked"></i></span>
-                                        <span><i class="fa-regular fa-star"></i></span>
-                                    </div>
-                                </div>
-                                <div class="families">
-                                    <h3>Families: </h3>
-                                    <div class="r-1" style="margin-top: 1.1rem; margin-left: 5rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star-half-stroke checked"></i></span>
-                                        <span><i class="fa-regular fa-star"></i></span>
-                                    </div>
-                                </div>
-                                <div class="solo">
-                                    <h3>Solo: </h3>
-                                    <div class="r-1" style="margin-top: 1.1rem; margin-left: 3rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star-half-stroke checked"></i></span>
-                                        <span><i class="fa-regular fa-star"></i></span>
-                                    </div>
-                                </div>
-                                <div class="business">
-                                    <h3>Business: </h3>
-                                    <div class="r-1" style="margin-top: 1.1rem; margin-left: 5.2rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-regular fa-star"></i></span>
-                                        <span><i class="fa-regular fa-star"></i></span>
-                                    </div>
-                                </div>
-                            </div>
 
                             <div class="room">
                                 <h2>Room</h2>
@@ -501,58 +409,6 @@
 
                         <div class="vertical-box">
 
-                            <div class="check">
-                                <h2>Check-In/Check-Out</h2>
-                                <input type="text" placeholder="Check-In" onfocus="(this.type = 'date')">
-                                <input type="text" placeholder="Check-Out" onfocus="(this.type = 'date')">
-                                <input type="text" placeholder="Guest?" onfocus="(this.type='number')" max="1" class="g"> 
-                                <button type="button">Check Availability?</button>
-                            </div>
-
-                            <div class="rating-cleanliness">
-                                <h2>Review</h2>
-                                <div class="couples">
-                                    <h3>Couples: </h3>
-                                    <div class="r" style="margin-top: 1rem; margin-left: 5rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star-half-stroke checked"></i></span>
-                                    </div>
-                                </div>
-                                <div class="families">
-                                    <h3>Families: </h3>
-                                    <div class="r-1" style="margin-top: 1.1rem; margin-left: 5rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-regular fa-star"></i></span>
-                                    </div>
-                                </div>
-                                <div class="solo">
-                                    <h3>Solo: </h3>
-                                    <div class="r-1" style="margin-top: 1.1rem; margin-left: 3rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-regular fa-star"></i></span>
-                                    </div>
-                                </div>
-                                <div class="business">
-                                    <h3>Business: </h3>
-                                    <div class="r-1" style="margin-top: 1.1rem; margin-left: 5.2rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star-half-stroke checked"></i></span>
-                                    </div>
-                                </div>
-                            </div>
-
                             <div class="room">
                                 <h2>Room</h2>
                                 <div class="r" style="margin-top: -0.6rem;">
@@ -654,58 +510,6 @@
 
                         <div class="vertical-box">
 
-                            <div class="check">
-                                <h2>Check-In/Check-Out</h2>
-                                <input type="text" placeholder="Check-In" onfocus="(this.type = 'date')">
-                                <input type="text" placeholder="Check-Out" onfocus="(this.type = 'date')">
-                                <input type="text" placeholder="Guest?" onfocus="(this.type='number')" max="1" class="g"> 
-                                <button type="button">Check Availability?</button>
-                            </div>
-
-                            <div class="rating-cleanliness">
-                                <h2>Review</h2>
-                                <div class="couples">
-                                    <h3>Couples: </h3>
-                                    <div class="r" style="margin-top: 1rem; margin-left: 5rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-regular fa-star"></i></span>
-                                    </div>
-                                </div>
-                                <div class="families">
-                                    <h3>Families: </h3>
-                                    <div class="r-1" style="margin-top: 1.1rem; margin-left: 5rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-regular fa-star"></i></span>
-                                    </div>
-                                </div>
-                                <div class="solo">
-                                    <h3>Solo: </h3>
-                                    <div class="r-1" style="margin-top: 1.1rem; margin-left: 3rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-regular fa-star"></i></span>
-                                    </div>
-                                </div>
-                                <div class="business">
-                                    <h3>Business: </h3>
-                                    <div class="r-1" style="margin-top: 1.1rem; margin-left: 5.2rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star-half-stroke checked"></i></span>
-                                        <span><i class="fa-regular fa-star"></i></span>
-                                        <span><i class="fa-regular fa-star"></i></span>
-                                    </div>
-                                </div>
-                            </div>
-
                             <div class="room">
                                 <h2>Room</h2>
                                 <div class="r" style="margin-top: -0.6rem;">
@@ -802,58 +606,6 @@
                         There's a quirky lobby bar. Breakfast, parking and an airport shuttle are available for a fee.  </p>
 
                         <div class="vertical-box">
-
-                            <div class="check">
-                                <h2>Check-In/Check-Out</h2>
-                                <input type="text" placeholder="Check-In" onfocus="(this.type = 'date')">
-                                <input type="text" placeholder="Check-Out" onfocus="(this.type = 'date')">
-                                <input type="text" placeholder="Guest?" onfocus="(this.type='number')" max="1" class="g"> 
-                                <button type="button">Check Availability?</button>
-                            </div>
-
-                            <div class="rating-cleanliness">
-                                <h2>Review</h2>
-                                <div class="couples">
-                                    <h3>Couples: </h3>
-                                    <div class="r" style="margin-top: 1rem; margin-left: 5rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-regular fa-star"></i></span>
-                                    </div>
-                                </div>
-                                <div class="families">
-                                    <h3>Families: </h3>
-                                    <div class="r-1" style="margin-top: 1.1rem; margin-left: 5rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-regular fa-star"></i></span>
-                                    </div>
-                                </div>
-                                <div class="solo">
-                                    <h3>Solo: </h3>
-                                    <div class="r-1" style="margin-top: 1.1rem; margin-left: 3rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-regular fa-star"></i></span>
-                                    </div>
-                                </div>
-                                <div class="business">
-                                    <h3>Business: </h3>
-                                    <div class="r-1" style="margin-top: 1.1rem; margin-left: 5.2rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-regular fa-star"></i></span>
-                                    </div>
-                                </div>
-                            </div>
 
                             <div class="room">
                                 <h2>Room</h2>
@@ -952,58 +704,6 @@
 
                         <div class="vertical-box">
 
-                            <div class="check">
-                                <h2>Check-In/Check-Out</h2>
-                                <input type="text" placeholder="Check-In" onfocus="(this.type = 'date')">
-                                <input type="text" placeholder="Check-Out" onfocus="(this.type = 'date')">
-                                <input type="text" placeholder="Guest?" onfocus="(this.type='number')" max="1" class="g"> 
-                                <button type="button">Check Availability?</button>
-                            </div>
-
-                            <div class="rating-cleanliness">
-                                <h2>Review</h2>
-                                <div class="couples">
-                                    <h3>Couples: </h3>
-                                    <div class="r" style="margin-top: 1rem; margin-left: 5rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-regular fa-star"></i></span>
-                                    </div>
-                                </div>
-                                <div class="families">
-                                    <h3>Families: </h3>
-                                    <div class="r-1" style="margin-top: 1.1rem; margin-left: 5rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-regular fa-star"></i></span>
-                                    </div>
-                                </div>
-                                <div class="solo">
-                                    <h3>Solo: </h3>
-                                    <div class="r-1" style="margin-top: 1.1rem; margin-left: 3rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-regular fa-star"></i></span>
-                                    </div>
-                                </div>
-                                <div class="business">
-                                    <h3>Business: </h3>
-                                    <div class="r-1" style="margin-top: 1.1rem; margin-left: 5.2rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-regular fa-star"></i></span>
-                                    </div>
-                                </div>
-                            </div>
-
                             <div class="room">
                                 <h2>Room</h2>
                                 <div class="r" style="margin-top: -0.6rem;">
@@ -1092,28 +792,6 @@
                         Full Scottish breakfast and parking are complimentary. There's a refined restaurant with a sunroom, and a wood-panelled bar with a fireplace. There's also a lakefront garden with seating.</p>
 
                         <div class="vertical-box">
-
-                            <div class="check">
-                                <h2>Check-In/Check-Out</h2>
-                                <input type="text" placeholder="Check-In" onfocus="(this.type = 'date')">
-                                <input type="text" placeholder="Check-Out" onfocus="(this.type = 'date')">
-                                <input type="text" placeholder="Guest?" onfocus="(this.type='number')" max="1" class="g"> 
-                                <button type="button">Check Availability?</button>
-                            </div>
-
-                            <div class="rating-cleanliness">
-                                <h2>Review</h2>
-                                <div class="couples">
-                                    <h3>Couples: </h3>
-                                    <div class="r" style="margin-top: 1rem; margin-left: 5rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-regular fa-star"></i></span>
-                                    </div>
-                                </div>
-                            </div>
 
                             <div class="room">
                                 <h2>Room</h2>
@@ -1212,48 +890,6 @@
 
                         <div class="vertical-box">
 
-                            <div class="check">
-                                <h2>Check-In/Check-Out</h2>
-                                <input type="text" placeholder="Check-In" onfocus="(this.type = 'date')">
-                                <input type="text" placeholder="Check-Out" onfocus="(this.type = 'date')">
-                                <input type="text" placeholder="Guest?" onfocus="(this.type='number')" max="1" class="g"> 
-                                <button type="button">Check Availability?</button>
-                            </div>
-
-                            <div class="rating-cleanliness">
-                                <h2>Review</h2>
-                                <div class="couples">
-                                    <h3>Couples: </h3>
-                                    <div class="r" style="margin-top: 1rem; margin-left: 5rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-regular fa-star "></i></span>
-                                    </div>
-                                </div>
-                                <div class="families">
-                                    <h3>Families: </h3>
-                                    <div class="r-1" style="margin-top: 1.1rem; margin-left: 5rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star-half-stroke checked"></i></span>
-                                        <span><i class="fa-regular fa-star"></i></span>
-                                    </div>
-                                </div>
-                                <div class="business">
-                                    <h3>Business: </h3>
-                                    <div class="r-1" style="margin-top: 1.1rem; margin-left: 3rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-regular fa-star"></i></span>
-                                    </div>
-                                </div>
-                            </div>
-
                             <div class="room">
                                 <h2>Room</h2>
                                 <div class="r">
@@ -1330,58 +966,6 @@
                         Parking is complimentary. A casual restaurant serves French cuisine, plus there's a cafe, a terrace and a bar/lounge. Other amenities include an outdoor pool, and a playground for children. Breakfast is offered for a fee.</p>
 
                         <div class="vertical-box">
-
-                            <div class="check">
-                                <h2>Check-In/Check-Out</h2>
-                                <input type="text" placeholder="Check-In" onfocus="(this.type = 'date')">
-                                <input type="text" placeholder="Check-Out" onfocus="(this.type = 'date')">
-                                <input type="text" placeholder="Guest?" onfocus="(this.type='number')" max="1" class="g"> 
-                                <button type="button">Check Availability?</button>
-                            </div>
-
-                            <div class="rating-cleanliness">
-                                <h2>Review</h2>
-                                <div class="couples">
-                                    <h3>Couples: </h3>
-                                    <div class="r" style="margin-top: 1rem; margin-left: 5rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-regular fa-star"></i></span>
-                                    </div>
-                                </div>
-                                <div class="families">
-                                    <h3>Families: </h3>
-                                    <div class="r-1" style="margin-top: 1.1rem; margin-left: 5rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-regular fa-star"></i></span>
-                                    </div>
-                                </div>
-                                <div class="solo">
-                                    <h3>Solo: </h3>
-                                    <div class="r-1" style="margin-top: 1.1rem; margin-left: 3rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-regular fa-star"></i></span>
-                                    </div>
-                                </div>
-                                <div class="business">
-                                    <h3>Business: </h3>
-                                    <div class="r-1" style="margin-top: 1.1rem; margin-left: 5.2rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-regular fa-star"></i></span>
-                                    </div>
-                                </div>
-                            </div>
 
                             <div class="room">
                                 <h2>Room</h2>
@@ -1484,48 +1068,6 @@
 
                         <div class="vertical-box">
 
-                            <div class="check">
-                                <h2>Check-In/Check-Out</h2>
-                                <input type="text" placeholder="Check-In" onfocus="(this.type = 'date')">
-                                <input type="text" placeholder="Check-Out" onfocus="(this.type = 'date')">
-                                <input type="text" placeholder="Guest?" onfocus="(this.type='number')" max="1" class="g"> 
-                                <button type="button">Check Availability?</button>
-                            </div>
-
-                            <div class="rating-cleanliness">
-                                <h2>Review</h2>
-                                <div class="couples">
-                                    <h3>Couples: </h3>
-                                    <div class="r" style="margin-top: 1rem; margin-left: 5rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star-half-stroke checked"></i></span>
-                                    </div>
-                                </div>
-                                <div class="families">
-                                    <h3>Families: </h3>
-                                    <div class="r-1" style="margin-top: 1.1rem; margin-left: 5rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star-half-stroke checked"></i></span>
-                                    </div>
-                                </div>
-                                <div class="solo">
-                                    <h3>Solo: </h3>
-                                    <div class="r-1" style="margin-top: 1.1rem; margin-left: 3rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star-half-stroke checked"></i></span>
-                                    </div>
-                                </div>
-                            </div>
-
                             <div class="room">
                                 <h2>Room</h2>
                                 <div class="r" style="margin-top: -0.6rem;">
@@ -1610,58 +1152,6 @@
                         Amenities include an airy international restaurant and a polished bistro/bar, along with a gym and 7 meeting rooms. There's also a breakfast buffet and parking.</p>
 
                         <div class="vertical-box">
-
-                            <div class="check">
-                                <h2>Check-In/Check-Out</h2>
-                                <input type="text" placeholder="Check-In" onfocus="(this.type = 'date')">
-                                <input type="text" placeholder="Check-Out" onfocus="(this.type = 'date')">
-                                <input type="text" placeholder="Guest?" onfocus="(this.type='number')" max="1" class="g"> 
-                                <button type="button">Check Availability?</button>
-                            </div>
-
-                            <div class="rating-cleanliness">
-                                <h2>Review</h2>
-                                <div class="couples">
-                                    <h3>Couples: </h3>
-                                    <div class="r" style="margin-top: 1rem; margin-left: 5rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star-half-stroke checked"></i></span>
-                                    </div>
-                                </div>
-                                <div class="families">
-                                    <h3>Families: </h3>
-                                    <div class="r-1" style="margin-top: 1.1rem; margin-left: 5rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-regular fa-star"></i></span>
-                                    </div>
-                                </div>
-                                <div class="solo">
-                                    <h3>Solo: </h3>
-                                    <div class="r-1" style="margin-top: 1.1rem; margin-left: 3rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-regular fa-star"></i></span>
-                                    </div>
-                                </div>
-                                <div class="business">
-                                    <h3>Business: </h3>
-                                    <div class="r-1" style="margin-top: 1.1rem; margin-left: 5.2rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-regular fa-star"></i></span>
-                                    </div>
-                                </div>
-                            </div>
 
                             <div class="room">
                                 <h2>Room</h2>
@@ -1759,49 +1249,7 @@
                         There's an elegant fine-dining restaurant and lounges with fireplaces. Other amenities include a courtyard garden with an outdoor heated pool, a hot tub and sunloungers, plus a chic spa.</p>
 
                         <div class="vertical-box">
-
-                            <div class="check">
-                                <h2>Check-In/Check-Out</h2>
-                                <input type="text" placeholder="Check-In" onfocus="(this.type = 'date')">
-                                <input type="text" placeholder="Check-Out" onfocus="(this.type = 'date')">
-                                <input type="text" placeholder="Guest?" onfocus="(this.type='number')" max="1" class="g"> 
-                                <button type="button">Check Availability?</button>
-                            </div>
-
-                            <div class="rating-cleanliness">
-                                <h2>Review</h2>
-                                <div class="couples">
-                                    <h3>Couples: </h3>
-                                    <div class="r" style="margin-top: 1rem; margin-left: 5rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star-half-stroke checked"></i></span>
-                                    </div>
-                                </div>
-                                <div class="families">
-                                    <h3>Families: </h3>
-                                    <div class="r-1" style="margin-top: 1.1rem; margin-left: 5rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star-half-stroke checked"></i></span>
-                                    </div>
-                                </div>
-                                <div class="solo">
-                                    <h3>Solo: </h3>
-                                    <div class="r-1" style="margin-top: 1.1rem; margin-left: 3rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star-half-stroke checked"></i></span>
-                                    </div>
-                                </div>
-                            </div>
-
+                            
                             <div class="room">
                                 <h2>Room</h2>
                                 <div class="r" style="margin-top: -0.6rem;">
@@ -1911,48 +1359,6 @@
 
                         <div class="vertical-box">
 
-                            <div class="check">
-                                <h2>Check-In/Check-Out</h2>
-                                <input type="text" placeholder="Check-In" onfocus="(this.type = 'date')">
-                                <input type="text" placeholder="Check-Out" onfocus="(this.type = 'date')">
-                                <input type="text" placeholder="Guest?" onfocus="(this.type='number')" max="1" class="g"> 
-                                <button type="button">Check Availability?</button>
-                            </div>
-
-                            <!-- <div class="rating-cleanliness">
-                                <h2>Review</h2>
-                                <div class="couples">
-                                    <h3>Couples: </h3>
-                                    <div class="r" style="margin-top: 1rem; margin-left: 5rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star-half-stroke checked"></i></span>
-                                    </div>
-                                </div>
-                                <div class="families">
-                                    <h3>Families: </h3>
-                                    <div class="r-1" style="margin-top: 1.1rem; margin-left: 5rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star-half-stroke checked"></i></span>
-                                    </div>
-                                </div>
-                                <div class="solo">
-                                    <h3>Solo: </h3>
-                                    <div class="r-1" style="margin-top: 1.1rem; margin-left: 3rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star-half-stroke checked"></i></span>
-                                    </div>
-                                </div>
-                            </div> -->
-
                             <div class="room">
                                 <h2>Room</h2>
                                 <div class="r">
@@ -2029,58 +1435,6 @@
                         A breakfast buffet is served in a modern restaurant that has a terrace. Other amenities include a sauna, a gym and event space, plus parking.</p>
 
                         <div class="vertical-box">
-
-                            <div class="check">
-                                <h2>Check-In/Check-Out</h2>
-                                <input type="text" placeholder="Check-In" onfocus="(this.type = 'date')">
-                                <input type="text" placeholder="Check-Out" onfocus="(this.type = 'date')">
-                                <input type="text" placeholder="Guest?" onfocus="(this.type='number')" max="1" class="g"> 
-                                <button type="button">Check Availability?</button>
-                            </div>
-
-                            <div class="rating-cleanliness">
-                                <h2>Review</h2>
-                                <div class="couples">
-                                    <h3>Couples: </h3>
-                                    <div class="r" style="margin-top: 1rem; margin-left: 5rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star-half-stroke checked"></i></span>
-                                    </div>
-                                </div>
-                                <div class="families">
-                                    <h3>Families: </h3>
-                                    <div class="r-1" style="margin-top: 1.1rem; margin-left: 5rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star-half-stroke checked"></i></span>
-                                    </div>
-                                </div>
-                                <div class="solo">
-                                    <h3>Solo: </h3>
-                                    <div class="r-1" style="margin-top: 1.1rem; margin-left: 3rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star-half-stroke checked"></i></span>
-                                    </div>
-                                </div>
-                                <div class="business">
-                                    <h3>Business: </h3>
-                                    <div class="r-1" style="margin-top: 1.1rem; margin-left: 5.2rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star-half-stroke checked"></i></span>
-                                    </div>
-                                </div>
-                            </div>
 
                             <div class="room">
                                 <h2>Room</h2>
@@ -2178,38 +1532,6 @@
                         A restaurant features refined Austrian dishes with Carinthian specialties, plus garden seating. There's also an indoor pool, a pond and a playground. Other amenities include beach access, a spa area and a gym, plus a kids' playroom with a climbing wall, a go-kart track and a paddling pool. Bike rentals are available.</p>
 
                         <div class="vertical-box">
-
-                            <div class="check">
-                                <h2>Check-In/Check-Out</h2>
-                                <input type="text" placeholder="Check-In" onfocus="(this.type = 'date')">
-                                <input type="text" placeholder="Check-Out" onfocus="(this.type = 'date')">
-                                <input type="text" placeholder="Guest?" onfocus="(this.type='number')" max="1" class="g"> 
-                                <button type="button">Check Availability?</button>
-                            </div>
-
-                            <div class="rating-cleanliness">
-                                <h2>Review</h2>
-                                <div class="couples">
-                                    <h3>Couples: </h3>
-                                    <div class="r" style="margin-top: 1rem; margin-left: 5rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star-half-stroke checked"></i></span>
-                                    </div>
-                                </div>
-                                <div class="families">
-                                    <h3>Families: </h3>
-                                    <div class="r-1" style="margin-top: 1.1rem; margin-left: 5rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star-half-stroke checked"></i></span>
-                                    </div>
-                                </div>
-                            </div>
 
                             <div class="room">
                                 <h2>Room</h2>
@@ -2321,58 +1643,6 @@
 
                         <div class="vertical-box">
 
-                            <div class="check">
-                                <h2>Check-In/Check-Out</h2>
-                                <input type="text" placeholder="Check-In" onfocus="(this.type = 'date')">
-                                <input type="text" placeholder="Check-Out" onfocus="(this.type = 'date')">
-                                <input type="text" placeholder="Guest?" onfocus="(this.type='number')" max="1" class="g"> 
-                                <button type="button">Check Availability?</button>
-                            </div>
-
-                            <div class="rating-cleanliness">
-                                <h2>Review</h2>
-                                <div class="couples">
-                                    <h3>Couples: </h3>
-                                    <div class="r" style="margin-top: 1rem; margin-left: 5rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-regular fa-star"></i></span>
-                                        <span><i class="fa-regular fa-star"></i></span>
-                                    </div>
-                                </div>
-                                <div class="families">
-                                    <h3>Families: </h3>
-                                    <div class="r-1" style="margin-top: 1.1rem; margin-left: 5rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star-half-stroke checked"></i></span>
-                                        <span><i class="fa-regular fa-star"></i></span>
-                                    </div>
-                                </div>
-                                <div class="solo">
-                                    <h3>Solo: </h3>
-                                    <div class="r-1" style="margin-top: 1.1rem; margin-left: 3rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-regular fa-star"></i></span>
-                                    </div>
-                                </div>
-                                <div class="business">
-                                    <h3>Business: </h3>
-                                    <div class="r-1" style="margin-top: 1.1rem; margin-left: 5.2rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-regular fa-star"></i></span>
-                                        <span><i class="fa-regular fa-star"></i></span>
-                                    </div>
-                                </div>
-                            </div>
-
                             <div class="room">
                                 <h2>Room</h2>
                                 <div class="r" style="margin-top: -0.6rem;">
@@ -2465,58 +1735,6 @@
                         Freebies include parking, as well as breakfast and dinner buffets served in a relaxed dining room. There's a casual pizzeria and a steakhouse restaurant, along with a 24-hour gym and a sauna.</p>
 
                         <div class="vertical-box">
-
-                            <div class="check">
-                                <h2>Check-In/Check-Out</h2>
-                                <input type="text" placeholder="Check-In" onfocus="(this.type = 'date')">
-                                <input type="text" placeholder="Check-Out" onfocus="(this.type = 'date')">
-                                <input type="text" placeholder="Guest?" onfocus="(this.type='number')" max="1" class="g"> 
-                                <button type="button">Check Availability?</button>
-                            </div>
-
-                            <div class="rating-cleanliness">
-                                <h2>Review</h2>
-                                <div class="couples">
-                                    <h3>Couples: </h3>
-                                    <div class="r" style="margin-top: 1rem; margin-left: 5rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-regular fa-star"></i></span>
-                                    </div>
-                                </div>
-                                <div class="families">
-                                    <h3>Families: </h3>
-                                    <div class="r-1" style="margin-top: 1.1rem; margin-left: 5rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-regular fa-star"></i></span>
-                                    </div>
-                                </div>
-                                <div class="solo">
-                                    <h3>Solo: </h3>
-                                    <div class="r-1" style="margin-top: 1.1rem; margin-left: 3rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-regular fa-star"></i></span>
-                                    </div>
-                                </div>
-                                <div class="business">
-                                    <h3>Business: </h3>
-                                    <div class="r-1" style="margin-top: 1.1rem; margin-left: 5.2rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-regular fa-star"></i></span>
-                                    </div>
-                                </div>
-                            </div>
 
                             <div class="room">
                                 <h2>Room</h2>
@@ -2615,58 +1833,6 @@
 
                         <div class="vertical-box">
 
-                            <div class="check">
-                                <h2>Check-In/Check-Out</h2>
-                                <input type="text" placeholder="Check-In" onfocus="(this.type = 'date')">
-                                <input type="text" placeholder="Check-Out" onfocus="(this.type = 'date')">
-                                <input type="text" placeholder="Guest?" onfocus="(this.type='number')" max="1" class="g"> 
-                                <button type="button">Check Availability?</button>
-                            </div>
-
-                            <div class="rating-cleanliness">
-                                <h2>Review</h2>
-                                <div class="couples">
-                                    <h3>Couples: </h3>
-                                    <div class="r" style="margin-top: 1rem; margin-left: 5rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-regular fa-star"></i></span>
-                                    </div>
-                                </div>
-                                <div class="families">
-                                    <h3>Families: </h3>
-                                    <div class="r-1" style="margin-top: 1.1rem; margin-left: 5rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-regular fa-star"></i></span>
-                                    </div>
-                                </div>
-                                <div class="solo">
-                                    <h3>Solo: </h3>
-                                    <div class="r-1" style="margin-top: 1.1rem; margin-left: 3rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-regular fa-star"></i></span>
-                                    </div>
-                                </div>
-                                <div class="business">
-                                    <h3>Business: </h3>
-                                    <div class="r-1" style="margin-top: 1.1rem; margin-left: 5.2rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-regular fa-star"></i></span>
-                                    </div>
-                                </div>
-                            </div>
-
                             <div class="room">
                                 <h2>Room</h2>
                                 <div class="r" style="margin-top: -0.6rem;">
@@ -2764,58 +1930,6 @@
 
                         <div class="vertical-box">
 
-                            <div class="check">
-                                <h2>Check-In/Check-Out</h2>
-                                <input type="text" placeholder="Check-In" onfocus="(this.type = 'date')">
-                                <input type="text" placeholder="Check-Out" onfocus="(this.type = 'date')">
-                                <input type="text" placeholder="Guest?" onfocus="(this.type='number')" max="1" class="g"> 
-                                <button type="button">Check Availability?</button>
-                            </div>
-
-                            <div class="rating-cleanliness">
-                                <h2>Review</h2>
-                                <div class="couples">
-                                    <h3>Couples: </h3>
-                                    <div class="r" style="margin-top: 1rem; margin-left: 5rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-regular fa-star"></i></span>
-                                    </div>
-                                </div>
-                                <div class="families">
-                                    <h3>Families: </h3>
-                                    <div class="r-1" style="margin-top: 1.1rem; margin-left: 5rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-regular fa-star"></i></span>
-                                    </div>
-                                </div>
-                                <div class="solo">
-                                    <h3>Solo: </h3>
-                                    <div class="r-1" style="margin-top: 1.1rem; margin-left: 3rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star-half-stroke checked"></i></span>
-                                        <span><i class="fa-regular fa-star"></i></span>
-                                    </div>
-                                </div>
-                                <div class="business">
-                                    <h3>Business: </h3>
-                                    <div class="r-1" style="margin-top: 1.1rem; margin-left: 5.2rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-regular fa-star"></i></span>
-                                    </div>
-                                </div>
-                            </div>
-
                             <div class="room">
                                 <h2>Room</h2>
                                 <div class="r" style="margin-top: -0.6rem;">
@@ -2898,58 +2012,6 @@
                     <p>Our hotel was originally built in 1790, resting on six acres of landscaped gardens at the bottom of Cadbury Hill Nature Reserve. Maintain your exercise regimen in our health club featuring spin and dance studios. Our spa offers over 80 treatments plus a salon, sauna, and indoor pool.</p>
 
                         <div class="vertical-box">
-
-                            <div class="check">
-                                <h2>Check-In/Check-Out</h2>
-                                <input type="text" placeholder="Check-In" onfocus="(this.type = 'date')">
-                                <input type="text" placeholder="Check-Out" onfocus="(this.type = 'date')">
-                                <input type="text" placeholder="Guest?" onfocus="(this.type='number')" max="1" class="g"> 
-                                <button type="button">Check Availability?</button>
-                            </div>
-
-                            <div class="rating-cleanliness">
-                                <h2>Review</h2>
-                                <div class="couples">
-                                    <h3>Couples: </h3>
-                                    <div class="r" style="margin-top: 1rem; margin-left: 5rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-regular fa-star"></i></span>
-                                    </div>
-                                </div>
-                                <div class="families">
-                                    <h3>Families: </h3>
-                                    <div class="r-1" style="margin-top: 1.1rem; margin-left: 5rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-regular fa-star"></i></span>
-                                    </div>
-                                </div>
-                                <div class="solo">
-                                    <h3>Solo: </h3>
-                                    <div class="r-1" style="margin-top: 1.1rem; margin-left: 3rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star-half-stroke checked"></i></span>
-                                        <span><i class="fa-regular fa-star"></i></span>
-                                    </div>
-                                </div>
-                                <div class="business">
-                                    <h3>Business: </h3>
-                                    <div class="r-1" style="margin-top: 1.1rem; margin-left: 5.2rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-regular fa-star"></i></span>
-                                    </div>
-                                </div>
-                            </div>
 
                             <div class="room">
                                 <h2>Room</h2>
@@ -3048,48 +2110,6 @@
 
                         <div class="vertical-box">
 
-                            <div class="check">
-                                <h2>Check-In/Check-Out</h2>
-                                <input type="text" placeholder="Check-In" onfocus="(this.type = 'date')">
-                                <input type="text" placeholder="Check-Out" onfocus="(this.type = 'date')">
-                                <input type="text" placeholder="Guest?" onfocus="(this.type='number')" max="1" class="g"> 
-                                <button type="button">Check Availability?</button>
-                            </div>
-
-                            <div class="rating-cleanliness">
-                                <h2>Review</h2>
-                                <div class="couples">
-                                    <h3>Couples: </h3>
-                                    <div class="r" style="margin-top: 1rem; margin-left: 5rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-regular fa-star"></i></span>
-                                    </div>
-                                </div>
-                                <div class="families">
-                                    <h3>Families: </h3>
-                                    <div class="r-1" style="margin-top: 1.1rem; margin-left: 5rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-regular fa-star"></i></span>
-                                    </div>
-                                </div>
-                                <div class="solo">
-                                    <h3>Solo: </h3>
-                                    <div class="r-1" style="margin-top: 1.1rem; margin-left: 3rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-regular fa-star"></i></span>
-                                    </div>
-                                </div>
-                            </div>
-
                             <div class="room">
                                 <h2>Room</h2>
                                 <div class="r" style="margin-top: -0.6rem;">
@@ -3187,58 +2207,6 @@
 
                         <div class="vertical-box">
 
-                            <div class="check">
-                                <h2>Check-In/Check-Out</h2>
-                                <input type="text" placeholder="Check-In" onfocus="(this.type = 'date')">
-                                <input type="text" placeholder="Check-Out" onfocus="(this.type = 'date')">
-                                <input type="text" placeholder="Guest?" onfocus="(this.type='number')" max="1" class="g"> 
-                                <button type="button">Check Availability?</button>
-                            </div>
-
-                            <div class="rating-cleanliness">
-                                <h2>Review</h2>
-                                <div class="couples">
-                                    <h3>Couples: </h3>
-                                    <div class="r" style="margin-top: 1rem; margin-left: 5rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star-half-stroke checked"></i></span>
-                                    </div>
-                                </div>
-                                <div class="families">
-                                    <h3>Families: </h3>
-                                    <div class="r-1" style="margin-top: 1.1rem; margin-left: 5rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star-half-stroke checked"></i></span>
-                                    </div>
-                                </div>
-                                <div class="solo">
-                                    <h3>Solo: </h3>
-                                    <div class="r-1" style="margin-top: 1.1rem; margin-left: 3rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star-half-stroke checked"></i></span>
-                                    </div>
-                                </div>
-                                <div class="business">
-                                    <h3>Business: </h3>
-                                    <div class="r-1" style="margin-top: 1.1rem; margin-left: 5.2rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-regular fa-star"></i></span>
-                                    </div>
-                                </div>
-                            </div>
-
                             <div class="room">
                                 <h2>Room</h2>
                                 <div class="r" style="margin-top: -0.6rem;">
@@ -3328,58 +2296,6 @@
                         </p>
 
                         <div class="vertical-box">
-
-                            <div class="check">
-                                <h2>Check-In/Check-Out</h2>
-                                <input type="text" placeholder="Check-In" onfocus="(this.type = 'date')">
-                                <input type="text" placeholder="Check-Out" onfocus="(this.type = 'date')">
-                                <input type="text" placeholder="Guest?" onfocus="(this.type='number')" max="1" class="g"> 
-                                <button type="button">Check Availability?</button>
-                            </div>
-
-                            <div class="rating-cleanliness">
-                                <h2>Review</h2>
-                                <div class="couples">
-                                    <h3>Couples: </h3>
-                                    <div class="r" style="margin-top: 1rem; margin-left: 5rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star-half-stroke checked"></i></span>
-                                    </div>
-                                </div>
-                                <div class="families">
-                                    <h3>Families: </h3>
-                                    <div class="r-1" style="margin-top: 1.1rem; margin-left: 5rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star-half-stroke checked"></i></span>
-                                    </div>
-                                </div>
-                                <div class="solo">
-                                    <h3>Solo: </h3>
-                                    <div class="r-1" style="margin-top: 1.1rem; margin-left: 3rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star-half-stroke checked"></i></span>
-                                    </div>
-                                </div>
-                                <div class="business">
-                                    <h3>Business: </h3>
-                                    <div class="r-1" style="margin-top: 1.1rem; margin-left: 5.2rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star-half-stroke checked"></i></span>
-                                    </div>
-                                </div>
-                            </div>
 
                             <div class="room">
                                 <h2>Room</h2>
@@ -3482,38 +2398,6 @@
 
                         <div class="vertical-box">
 
-                            <div class="check">
-                                <h2>Check-In/Check-Out</h2>
-                                <input type="text" placeholder="Check-In" onfocus="(this.type = 'date')">
-                                <input type="text" placeholder="Check-Out" onfocus="(this.type = 'date')">
-                                <input type="text" placeholder="Guest?" onfocus="(this.type='number')" max="1" class="g"> 
-                                <button type="button">Check Availability?</button>
-                            </div>
-
-                            <div class="rating-cleanliness">
-                                <h2>Review</h2>
-                                <div class="couples">
-                                    <h3>Couples: </h3>
-                                    <div class="r" style="margin-top: 1rem; margin-left: 5rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star-half-stroke checked"></i></span>
-                                        <span><i class="fa-regular fa-star "></i></span>
-                                    </div>
-                                </div>
-                                <div class="families">
-                                    <h3>Families: </h3>
-                                    <div class="r-1" style="margin-top: 1.1rem; margin-left: 5rem;">
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star checked"></i></span>
-                                        <span><i class="fa-solid fa-star-half-stroke checked"></i></span>
-                                    </div>
-                                </div>
-                            </div>
-
                             <div class="room">
                                 <h2>Room</h2>
                                 <div class="r" style="margin-top: -0.6rem;">
@@ -3560,7 +2444,7 @@
                         </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </container>
 
     <footer>
