@@ -23,7 +23,7 @@
         </div>
         <div class="nav-button">
         <ul>
-            <li><a href="#">Home</a></li>
+            <li><a href="#" onclick="btn-1()">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#" class="active">Hotels</a></li>
             <li><a href="#">Experience</a>
@@ -62,7 +62,7 @@
         </div>
 
     <container>
-        <div class="card-1">
+        <!-- <div class="card-1">
             <div class="left">
                 <div class="main">
                     <div class="main-head">
@@ -89,11 +89,6 @@
                         <img src="{%static 'img/mar_hotel/5.jpg'%}" alt="img-5" class="image-item">
                         <img src="{%static 'img/mar_hotel/6.jpg'%}" alt="img-6" class="image-item">
                     </div>
-                    <!-- <div class="slider-scrollbar">
-                        <div class="scrollbar-track">
-                            <div class="scrollbar-thumb"></div>
-                        </div>
-                    </div> -->
                 </div>
             </div>
             <div class="right">
@@ -138,36 +133,16 @@
                                     <i class="fa-solid fa-baby-carriage"></i>
                                     <p>Child Friendly</p>
                                 </div>
-                                <div class="ac">
-                                    <i class="fa-solid fa-snowflake"></i>
-                                    <p>Air-Conditioned</p>
-                                </div>
-                                <div class="as">
-                                    <i class="fa-solid fa-van-shuttle"></i>
-                                    <p>Airport Shuttle</p>
-                                </div>
-                                <div class="cf">
-                                    <i class="fa-solid fa-baby-carriage"></i>
-                                    <p>Child Friendly</p>
-                                </div>
-                                <div class="ac">
-                                    <i class="fa-solid fa-snowflake"></i>
-                                    <p>Air-Conditioned</p>
-                                </div>
-                                <div class="as">
-                                    <i class="fa-solid fa-van-shuttle"></i>
-                                    <p>Airport Shuttle</p>
-                                </div>
-                                <div class="cf">
-                                    <i class="fa-solid fa-baby-carriage"></i>
-                                    <p>Child Friendly</p>
-                                </div>
                             </div>
 
                         </div>
+
+                        <div class="button">
+                            <button type="submit">Book</button>
+                        </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!--Add more card here below, and in css change the class name-->
         <!-- <div class="card-2">
             <div class="left">
@@ -2445,6 +2420,59 @@
                 </div>
             </div>
         </div> -->
+        
+        <!--New_Template-->
+        <div class="m-1">
+            <div class="m-images">
+                <div class="left-images">
+                    <img src="{%static 'img/mar_hotel/main.jpg'%}" alt="main">
+                </div>
+                <div class="right-images">
+                    <img src="{%static 'img/mar_hotel/1.jpg'%}" alt="1">
+                    <img src="{%static 'img/mar_hotel/2.jpg'%}" alt="2">
+                    <img src="{%static 'img/mar_hotel/3.jpg'%}" alt="3">
+                    <img src="{%static 'img/mar_hotel/4.jpg'%}" alt="4">
+                </div>
+            </div>
+            <div class="m-head">
+                <div class="head">
+                    <h1>Hotel Margarita</h1>
+                    <div class="pointer">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <a href="https://maps.app.goo.gl/GqRmnbnjNUfFCYxA6" target="_blank">Main Street,Santorini,Greece</a>
+                    </div>
+                </div>
+                <div class="head-rating">
+                    <span><h4 style="font-family: 'Times New Roman', Times, serif;"><i class="fa-solid fa-star checked"></i></span>
+                        <span><i class="fa-solid fa-star checked"></i></span>
+                        <span><i class="fa-solid fa-star checked"></i></span>
+                        <span><i class="fa-solid fa-star checked"></i></span>
+                        <span><i class="fa-solid fa-star-half-stroke checked"style="margin-right: 0.5rem;"></i></span>4.6</h4>
+                </div>
+            </div>
+        </div> 
+        <hr style="width: 90%; margin: auto;">
+
+        <table>
+            <tr>
+                <th>Accomodation Type</th>
+                <th>Number of Guests</th>
+                <th>Price of 2 nights</th>
+                <th>Your choices</th>
+                <th>Select Amount</th>
+                <th>Button</th>
+              </tr>
+              <tr>
+               <td><a href="">Hotel Margarita</a><br>
+                Double or Twin</td>
+                <td><i class="fa-solid fa-user"></i></td>
+                <td>Rs.18,080 (Rs.9,040 per night)</td>
+                <td>Includes VAT and Free internet access, Bed & Breakfast</td>
+                <td><input type="number"></td>
+                <td><button type="submit">I'll Reserve</button></td>
+              </tr>
+        </table>
+
     </container>
 
     <footer>

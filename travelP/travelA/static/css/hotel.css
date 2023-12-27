@@ -113,7 +113,7 @@ nav ul .dropdown-1 img{
     object-fit: cover;
 }
 /*experience dropdown hover ends*/
-.card-1 .left{
+/* .card-1 .left{
     position: absolute;
 }
 .card-1{
@@ -243,9 +243,93 @@ nav ul .dropdown-1 img{
 .card-1 .right .vertical-box .room .cf p{
     margin-left: 0.9rem;
 }
-
+container .button button{
+    margin-top: 1rem;
+}
+container .button button{
+    border: none;
+    padding: 1rem 2rem;
+}
+container .button button:hover{
+    color: white;
+    background-color: rgb(4, 4, 255);
+    transition: all 0.5s ease-in-out;
+} */
+/*new_template starts*/
+.m-1 .m-images{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+}
+.m-1 .m-images .left-images img{
+    width: 36rem;
+    border-radius: 1rem;
+}
+.m-1 .m-images .right-images{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    padding: 0 1rem;
+}
+.m-1 .m-images .right-images img{
+    width: 17.3rem;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+.m-1 .m-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10rem;
+}
+.m-1 .m-head .head .pointer{
+    margin-bottom: 0.5rem;
+}
+.m-1 .m-head .head .pointer i{
+    position: absolute;
+}
+.m-1 .m-head .head .pointer a{
+    padding-left: 0.5rem;
+    text-decoration: none;
+    color: black;
+}
+.m-1 .m-head .head .pointer a::after{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 0;
+    margin-left: 1.5rem;
+    background-color: black;
+    transition: all 0.5s ease-in-out;
+}
+.m-1 .m-head .head .pointer a:hover::after{
+    width:90%;
+}
+table{
+    text-align: center;
+    display: block;
+    margin: auto;
+    border:1px solid black;
+    width: 90%;
+    margin-top: 2rem;
+}
+table tr,th,td{
+    border: 1px solid black;
+    padding: 1rem 2rem;
+}
+table td button{
+    background-color: white;
+    padding: 0.1rem 1rem;
+}
+table td button:hover{
+    transition: all 0.5s ease-in-out;
+    background-color: rgb(57, 57, 255);
+    color: white;
+}
+/*new_template ends*/
 footer{
-    margin-top: 15rem;
+    margin-top: 8rem;
     padding-left: 5rem;
     padding-right: 5rem;
 }

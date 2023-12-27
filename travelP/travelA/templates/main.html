@@ -65,32 +65,26 @@
                 <img src="{%static 'img/main_travel/6.jpg'%}" alt="img-6" class="image-item">
             </div>
         </div>
-        <div class="book-box">
-            <input class="dest" type="text" placeholder="Please Select Your Destination">
-            <select name="dest" placeholder="Please Select your Destination">
-                <option value="Room?">Please Select your Destination</option>
-                <option value="1">Greece</option>
-                <option value="2">Italy</option>
-                <option value="3">Rome</option>
-                <option value="4">Europe</option>
-            </select>
-            <input class="dt" type="text" onfocus="(this.type='date')" placeholder="Check-In" min="2023-12-25" max="2024-01-30" required>
-            <input class="dt" type="text" onfocus="(this.type='date')" placeholder="Check-Out"min="2023-12-25" max="2024-01-30" required>
-            <select name="Room" id="room">
-                <option value="Room?">Room?</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-            </select>
-            <select name="Adult" id="adult">
-                <option value="Adult?">Day/Night</option>
-                <option value="1">1D/1N</option>
-                <option value="2">2D/2N</option>
-                <option value="3">3D/3N</option>
-                <option value="4">4D/4N</option>
-            </select>
-            <button type="button">SEARCH</button>
+        <div class="search-box">
+            <div class="search">
+                <input type="search" placeholder="Enter your Search">
+            </div>
+            <div class="check-in">
+                <input type="text" placeholder="Check-In" onfocus="(this.type=date)" min="2023-12-28" max="2024-01-28">
+            </div>
+            <div class="check-out">
+                <input type="text" placeholder="Check-Out" onfocus="(this.type=date)" min="2023-12-30" max="2024-01-30">
+            </div>
+            <div class="s-g">
+                <select name="guest" id="guest">
+                    <option value="Room?">Guest?</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select> 
+            </div>
+            <button type="button">Search</button>
         </div>
         <div class="box-1">
             <div class="right-side-box">

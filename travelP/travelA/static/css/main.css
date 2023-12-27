@@ -144,45 +144,6 @@ container .c-1 .carousel-img-list .image-item{
     height: 500px;
     object-fit: cover;
 }
-container .book-box{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin:auto;
-    background-color: rgba(84, 84, 84, 0.3);
-    backdrop-filter: blur(10px);
-    padding: 0.5rem 0;
-}
-container .book-box .dest{
-    width: 15rem;
-    cursor: text;
-}
-container .book-box .dt{
-    cursor: default;
-}
-container .book-box input{
-    text-align: center;
-}
-container .book-box input,select,button{
-    border: none;
-    border-radius: 1rem;
-    padding: 0.5rem 1rem;
-    margin-right: 1rem;
-}
-container .book-box button{
-    background-color: white;
-    border: 1px solid black;
-}
-container .book-box button{
-    text-decoration: none;
-    color: black;
-}
-container .book-box button:hover{
-    background-color: navy;
-    color: white;
-    transition: all 0.5s ease-in-out;
-}
 container .box-1 .right-side-box,.box-quotes{
     display:flex;
     align-items: center;
@@ -196,6 +157,45 @@ container .box-1 .right-side-box .box-img img{
 }
 container .box-1 .right-side-box .box-quotes{
     font-size: 1.5rem;
+}
+.search-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.search-box .search input{
+    text-align: center;
+    border: none;
+    padding: 1rem 3rem;
+}
+.search-box .check-in input{
+    text-align: center;
+    border: none;
+    padding: 1rem 3rem;
+}
+.search-box .check-out input{
+    text-align: center;
+    border: none;
+    padding: 1rem 3rem;
+}
+.search-box #guest{
+    border: none;
+    padding: 1rem 3rem;
+}
+.search-box button{
+    text-align: center;
+    border: none;
+    padding: 1rem 3rem;
+    transition: transform 0.5s ease-in-out;
+    letter-spacing: 2px;
+}
+.search-box button:hover{
+    background-color: navy;
+    cursor: alias;
+    color: white;
+    font-weight: bolder;
+    transform: translateY(-2px);
 }
 /* container .box-1 .right-side-box .box-quotes button{
     border: none;
