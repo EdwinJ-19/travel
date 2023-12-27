@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel & Tourism</title>
+    <link href="{%static 'img/plane.svg'%}" rel="icon" type="img/icons">
+    <!--CSS LINK-->
+    <link href="{%static 'css/main.css'%}" rel="stylesheet" type="text/css">
+     <!--GOOGLE FONTS-->
+     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Oswald:wght@200;300;400&family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Raleway&display=swap" rel="stylesheet">
+    <!--Fontawesome icon-->
+    <script src="{% static 'fontawesomefree/js/all.min.js' %}"></script>
+    <!--GSAP-->
+    <!-- <script src="{%static 'js/gsap/dist/gsap.all.js'%}" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <!-- <script src="{%static 'js/script.js'%}"></script>  -->
+</head>
+<body>
+
+    <nav>
+        <div class="nav-header">
+            <img src="{%static 'img/T&T.png'%}" style="width: 5rem;">
+            <!-- <h1>Travel & Tourism</h1> -->
+        </div>
+        <div class="nav-button">
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Hotels</a>
+                <ul class="dropdown" style="margin-left: -38rem; margin-top: 0.5rem;">
+                    <li><a href="#">Mumbai</a><img src="{%static 'img/hotel_nav/mum.jpg'%}"></li>
+                    <li><a href="#">Udaipur</a><img src="{%static 'img/hotel_nav/udai.jpeg'%}"></li>
+                    <li><a href="#">Gurugram</a><img src="{%static 'img/hotel_nav/gurugram.jpg'%}"></li>
+                    <li><a href="#">Jaipur</a><img src="{%static 'img/hotel_nav/jaipur.jpg'%}"></li>
+                    <li><a href="#">Delhi</a><img src="{%static 'img/hotel_nav/delhi.jpg'%}"></li>
+                    <li><a href="#">Bengaluru</a><img src="{%static 'img/hotel_nav/bengaluru.jpg'%}"></li>
+                    <li><a href="#">Gandhinagar</a><img src="{%static 'img/hotel_nav/gandhinagar.jpg'%}"></li>
+                    <li><a href="#">Chennai</a><img src="{%static 'img/hotel_nav/chennai.jpeg'%}"></li>
+                    <li><a href="#">Ashtamudi</a><img src="{%static 'img/hotel_nav/ashtamudi.jpg'%}"></li>
+                </ul>
+            </li>
+            <li><a href="#">Experience</a>
+                <ul class="dropdown-1" style="margin-left: -45rem; margin-top: 0.5rem;">
+                    <li><a href="#">Art</a><img src="{%static 'img/exp_nav/art.avif'%}"></li>
+                    <li><a href="#">Culinary</a><img src="{%static 'img/exp_nav/cul.avif'%}"></li>
+                    <li><a href="#">Leisure</a><img src="{%static 'img/exp_nav/leisure.avif'%}"></li>
+                    <li><a href="#">Romance</a><img src="{%static 'img/exp_nav/romance.jpg'%}"></li>
+                    <li><a href="#">Wellness</a><img src="{%static 'img/exp_nav/wellness.avif'%}"></li>
+                </ul>
+            </li>
+            <li class="book"><a href="#">BOOK</a></li>
+        </ul>
+        </div>
+    </nav>
+
+    <container>
+        <div class="c-1">
+            <div class="carousel-img-list">
+                <img src="{%static 'img/main_travel/1.jpg'%}" alt="img-1" class="image-item">
+                <img src="{%static 'img/main_travel/2.jpg'%}" alt="img-2" class="image-item">
+                <img src="{%static 'img/main_travel/3.jpg'%}" alt="img-3" class="image-item">
+                <img src="{%static 'img/main_travel/4.jpg'%}" alt="img-4" class="image-item">
+                <img src="{%static 'img/main_travel/5.jpg'%}" alt="img-5" class="image-item">
+                <img src="{%static 'img/main_travel/6.jpg'%}" alt="img-6" class="image-item">
+            </div>
+        </div>
+        <div class="book-box">
+            <input class="dest" type="text" placeholder="Please Select Your Destination">
+            <select name="dest" placeholder="Please Select your Destination">
+                <option value="Room?">Please Select your Destination</option>
+                <option value="1">Greece</option>
+                <option value="2">Italy</option>
+                <option value="3">Rome</option>
+                <option value="4">Europe</option>
+            </select>
+            <input class="dt" type="text" onfocus="(this.type='date')" placeholder="Check-In" min="2023-12-25" max="2024-01-30" required>
+            <input class="dt" type="text" onfocus="(this.type='date')" placeholder="Check-Out"min="2023-12-25" max="2024-01-30" required>
+            <select name="Room" id="room">
+                <option value="Room?">Room?</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            <select name="Adult" id="adult">
+                <option value="Adult?">Day/Night</option>
+                <option value="1">1D/1N</option>
+                <option value="2">2D/2N</option>
+                <option value="3">3D/3N</option>
+                <option value="4">4D/4N</option>
+            </select>
+            <button type="button">SEARCH</button>
+        </div>
+        <div class="box-1">
+            <div class="right-side-box">
+                <div class="box-img">
+                    <img src="{%static 'img/travel-1.avif'%}" alt="t&t-1">
+                </div>
+                <div class="box-quotes">
+                    <p>"The journey of a thousand miles begins with a single step"</p>
+                </div>
+            </div>
+        </div>
+        <div class="box-2">
+            <div class="right-side-box">
+                <div class="box-img">
+                    <img src="{%static 'img/travel-2.jpg'%}" alt="t&t-2">
+                </div>
+                <div class="box-quotes">
+                    <p>"Dare to live the life you've always wanted"</p>
+                </div>
+            </div>
+        </div>
+        <div class="box-3">
+            <div class="right-side-box">
+                <div class="box-img">
+                    <img src="{%static 'img/travel-3.jpg'%}" alt="t&t-3">
+                </div>
+                <div class="box-quotes">
+                    <p>"You don't have to be rich to travel, traveling itself makes you rich"</p>
+                    <button type="button">Book Hotel</button>
+                </div>
+            </div>
+        </div>
+
+    </container>
+    <br>
+    <footer>
+
+            <div class="link">
+                <h1>Follow Us</h1>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-github"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-discord"></i></a>
+            </div>
+
+            <div class="cr">
+                <h1>&copy; 2023 Travel and Tours Co., Ltd. All rights reserved | Designed by<a href="https://github.com/EdwinJ-19" class="designed"><i class="fa-brands fa-github"></i>.</a></h1>
+                <div class="t&c">
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Legal</a></li>
+                        <li><a href="#">Terms & Condition</a></li>
+                    </ul>
+                </div>
+            </div>
+
+    </footer>
+</body>
+</html>

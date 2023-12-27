@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', sans-serif;
+}
+body{
+    background-image: linear-gradient(315deg, #f0fff0 0%, #f5f5f5 74%);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: black;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+.nav-header{
+    margin-left: 5rem;
+}
+nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .nav-button ul{
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+    margin-right: 5rem;
+}
+.nav-button li a{
+    text-decoration: none;
+    color: black;
+}
+nav .nav-button ul li:hover{
+    transform: translateY(-2px);
+    transition: transform 0.3s ease-in-out;
+}
+.nav-button li .active{
+    color:black;
+    font-weight: bolder;
+}
+.nav-button .book a{
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 0.2rem 1.2rem;
+}
+.nav-button .book a:hover{
+    background-color: navy;
+    color:white;
+    transition: all 0.3s ease-in-out;
+    font-weight: bolder;
+}
+/*hotels dropdown hover starts*/
+nav ul li:hover ul.dropdown{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    padding: 1rem;
+}
+nav ul li .dropdown li{
+    text-align: center;
+    padding-top: 0.5rem;
+}
+nav ul li .dropdown {
+    position: absolute;
+    z-index: 500;
+    display: none;
+    transition: transform 0.5s ease-in-out;
+    background-image: linear-gradient(315deg, #f0fff0 0%, #f5f5f5 74%);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    backdrop-filter: blur(5rem);
+}
+nav ul li .dropdown a{
+    color: white;
+    padding-bottom: 1rem;
+    color: black;
+}
+nav ul li a:hover{
+    transform: translateY(-2px);
+}
+nav ul .dropdown img{
+    width: 10rem;
+    height: 10rem;
+    position: relative;
+    margin-top: 0.5rem;
+    object-fit: cover;
+}
+/*hotels dropdown hover ends*/
+/*experience dropdown hover starts*/
+nav ul li:hover ul.dropdown-1{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    padding: 1rem;
+}
+nav ul li .dropdown-1 li{
+    text-align: center;
+    padding-top: 0.5rem;
+}
+nav ul li .dropdown-1 {
+    position: absolute;
+    z-index: 500;
+    display: none;
+    transition: transform 0.5s ease-in-out;
+    background-color: white;
+}
+nav ul li .dropdown-1 a{
+    color: white;
+    padding-bottom: 1rem;
+    color: black;
+}
+nav ul li a:hover{
+    transform: translateY(-2px);
+}
+nav ul .dropdown-1 img{
+    width: 10rem;
+    height: 10rem;
+    position: relative;
+    margin-top: 0.5rem;
+    object-fit: cover;
+}
+/*experience dropdown hover ends*/
+container .c-1{
+    margin-left: 1rem;
+    max-width: 1500px;
+    width: 100%;
+}
+container .c-1 .carousel-img-list{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    font-size: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+}
+container .c-1 .carousel-img-list::-webkit-scrollbar{
+    display: none;
+}
+container .c-1 .carousel-img-list .image-item{
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+}
+container .book-box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:auto;
+    background-color: rgba(84, 84, 84, 0.3);
+    backdrop-filter: blur(10px);
+    padding: 0.5rem 0;
+}
+container .book-box .dest{
+    width: 15rem;
+    cursor: text;
+}
+container .book-box .dt{
+    cursor: default;
+}
+container .book-box input{
+    text-align: center;
+}
+container .book-box input,select,button{
+    border: none;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+}
+container .book-box button{
+    background-color: white;
+    border: 1px solid black;
+}
+container .book-box button{
+    text-decoration: none;
+    color: black;
+}
+container .book-box button:hover{
+    background-color: navy;
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+container .box-1 .right-side-box,.box-quotes{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+container .box-1 .right-side-box .box-img img{
+    margin-top: 1rem;
+    width: 626px;
+    height: 352px;
+    object-fit: cover;
+}
+container .box-1 .right-side-box .box-quotes{
+    font-size: 1.5rem;
+}
+/* container .box-1 .right-side-box .box-quotes button{
+    border: none;
+    padding: 0.5rem 2rem;
+    border-radius: 1rem;
+    background-color: black;
+    color: white;
+    margin-top: 1rem;
+}
+container .box-1 .right-side-box .box-quotes button:hover{
+    cursor: alias;
+    background-color: grey;
+    color: white;
+    transition: all 0.5s ease-in-out;
+} */
+container .box-2 .right-side-box,.box-quotes{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+container .box-2 .right-side-box .box-img img{
+    margin-top: 1rem;
+    width: 626px;
+    height: 352px;
+    object-fit: cover;
+}
+container .box-2 .right-side-box .box-quotes{
+    font-size: 1.5rem;
+}
+container .box-3 .right-side-box .box-img img{
+    display: block;
+    width: 626px;
+    height: 352px;
+    object-fit: cover;
+    margin: auto;
+    margin-top: 1rem;
+}
+container .box-3 .right-side-box .box-quotes{
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+container .box-3 .right-side-box .box-quotes button{
+    position: absolute;
+    border: none;
+    padding: 0.5rem 2rem;
+    border-radius: 1rem;
+    background-color: black;
+    color: white;
+    margin-top: 5rem;
+}
+container .box-3 .right-side-box .box-quotes button:hover{
+    cursor: alias;
+    background-color: grey;
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+footer{
+    margin-top: 6rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+footer .designed{
+    cursor: alias;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    margin-left: 0.3rem;
+    margin-top: 2rem;
+}
+footer .link h1{
+    font-family: 'Dancing Script',cursive;
+    padding-bottom: 0.2rem;
+}
+footer .link a{
+    text-decoration: none;
+    color:black; 
+    font-size: 1.5rem;
+    margin-right: 3rem;
+}
+.cr{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+.cr h1{
+    padding-top: 1rem;
+    font-size: 0.8rem;
+    font-weight: lighter;
+}
+.cr ul{
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+    font-size: 0.9rem;
+}
+.cr ul a{
+    text-decoration: none;
+    color: black;
+}

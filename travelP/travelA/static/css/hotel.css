@@ -1,0 +1,3294 @@
+*{
+   margin: 0;
+   padding: 0; 
+   color: black;
+   font-family: 'PlayFair Display', sans-serif;
+}
+body{
+    background-image: linear-gradient(315deg, #f0fff0 0%, #f5f5f5 74%);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+.nav-header{
+    margin-left: 5rem;
+}
+nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .nav-button ul{
+    list-style: none;
+    display: flex;
+    gap: 5rem;
+    margin-right: 5rem;
+}
+.nav-button li a{
+    text-decoration: none;
+    color: black;
+}
+nav .nav-button ul li:hover{
+    transform: translateY(-2px);
+    transition: transform 0.3s ease-in-out;
+}
+.nav-button li  .active{
+    color:black;
+    font-weight: bolder;
+}
+nav .search input{
+    position: relative;
+    outline: none;
+    padding: 0.5rem 2rem;
+    text-align: center;
+    background-image: linear-gradient(315deg, #f0fff0 0%, #f5f5f5 74%);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: 5rem;
+}
+/*experience dropdown hover starts*/
+nav ul li:hover ul.dropdown-1{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    padding: 1rem;
+}
+nav ul li .dropdown-1 li{
+    text-align: center;
+}
+nav ul li .dropdown-1 {
+    position: absolute;
+    z-index: 500;
+    display: none;
+    transition: transform 0.5s ease-in-out;
+    background-color: white;
+}
+nav ul li .dropdown-1 a{
+    color: white;
+    padding-bottom: 1rem;
+    color: black;
+}
+nav ul li a:hover{
+    transform: translateY(-2px);
+}
+nav ul .dropdown-1 img{
+    width: 5rem;
+    height: 5rem;
+    position: relative;
+    margin-top: 0.5rem;
+    object-fit: cover;
+}
+/*experience dropdown hover ends*/
+.card-1 .left{
+    position: absolute;
+}
+.card-1{
+    margin: 2rem 0 0 5rem;
+}
+.card-1 .left .main .main-head h1{
+    margin-bottom:0.5rem;
+    color: black;
+}
+.card-1 .left .main .main-head .pointer{
+    margin-bottom: 0.5rem;
+}
+.card-1 .left .main .main-head .pointer i{
+    position: absolute;
+}
+.card-1 .left .main .main-head .pointer a{
+    padding-left: 0.5rem;
+    text-decoration: none;
+    color: black;
+}
+.card-1 .left .main .main-head .pointer a::after{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 0;
+    margin-left: 1.5rem;
+    background-color: black;
+    transition: all 0.5s ease-in-out;
+}
+.card-1 .left .main .main-head .pointer a:hover::after{
+    width:38.4%;
+}
+.card-1 .left .c-1{
+    max-width: 550px;
+    width: 100%;
+}
+.card-1 .left .carousel-img-list{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 1rem;
+    font-size: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+}
+.card-1 .left .carousel-img-list::-webkit-scrollbar{
+    display: none;
+}
+.card-1 .left .carousel-img-list .image-item{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.card-1 .right{
+    margin-top: 1rem;
+    margin-left: 37rem;
+    width:49rem;
+}
+.card-1 .right .main-details h2{
+    margin-bottom: 1rem;
+    color: black;
+}
+.card-1 .right .main-details .rating{
+    margin-bottom: 0.5rem;
+}
+.card-1 .right .main-details .checked{
+    color: orangered;
+}
+.card-1 .right .main-details .rating h4{
+    font-size: 1.2rem;
+}
+.card-1 .right .main-details .vertical-box .check h2{
+    margin-top: 1rem;
+}
+.card-1 .right .main-details .vertical-box .check input{
+    padding: 0.5rem 1.5rem;
+    margin-right: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+.card-1 .right .main-details .vertical-box .check .g{
+    width: 3rem;
+}
+.card-1 .right .main-details .vertical-box .check button{
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    color: white;
+    background-color: black;
+}
+.card-1 .right .main-details .vertical-box .check button:hover{
+    background-color: rgb(133, 255, 147);
+    color: black;
+    transition: all 0.3s ease-in-out ;
+}
+.card-1 .right .rating-cleanliness h2{
+    margin-top: 1rem;  
+    color: black;
+}
+.card-1 .right .rating-cleanliness .couples h3{
+    position: absolute;
+    margin-top: -0.15rem;
+}
+.card-1 .right .rating-cleanliness .families h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-1 .right .rating-cleanliness .solo h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-1 .right .vertical-box .room h2{
+    margin-top: 1rem;
+    color: black;
+}
+.card-1 .right .vertical-box .room .ac,.as,.cf{
+    display: flex;
+    align-items: center;
+}
+.card-1 .right .vertical-box .room .ac p{
+    margin-left: 1.1rem;
+}
+.card-1 .right .vertical-box .room .as p{
+    margin-left: 0.7rem;
+}
+.card-1 .right .vertical-box .room .cf p{
+    margin-left: 0.9rem;
+}
+
+/*card-2*/
+.card-2 .left{
+    position: absolute;
+}
+.card-2{
+    margin: 2rem 0 7rem 5rem;
+}
+.card-2 .left .main .main-head h1{
+    margin-bottom:0.5rem;
+    color: black;
+}
+.card-2 .left .main .main-head .pointer{
+    margin-bottom: 0.5rem;
+}
+.card-2 .left .main .main-head .pointer i{
+    position: absolute;
+}
+.card-2 .left .main .main-head .pointer a{
+    padding-left: 0.5rem;
+    text-decoration: none;
+    color: black;
+}
+.card-2 .left .main .main-head .pointer a::after{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 0;
+    margin-left: 1.5rem;
+    background-color: black;
+    transition: all 0.5s ease-in-out;
+}
+.card-2 .left .main .main-head .pointer a:hover::after{
+    width:38.4%;
+}
+.card-2 .left .c-1{
+    max-width: 550px;
+    width: 100%;
+}
+.card-2 .left .carousel-img-list{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 1rem;
+    font-size: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+}
+.card-2 .left .carousel-img-list::-webkit-scrollbar{
+    display: none;
+}
+.card-2 .left .carousel-img-list .image-item{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.card-2 .right{
+    margin-top: 1rem;
+    margin-left: 37rem;
+    width:49rem;
+}
+.card-2 .right .main-details h2{
+    margin-bottom: 1rem;
+    color: black;
+}
+.card-2 .right .main-details .rating{
+    margin-bottom: 0.5rem;
+}
+.card-2 .right .main-details .checked{
+    color: orangered;
+}
+.card-2 .right .main-details .rating h4{
+    font-size: 1.2rem;
+}
+.card-2 .right .main-details .vertical-box .check h2{
+    margin-top: 1rem;
+}
+.card-2 .right .main-details .vertical-box .check input{
+    padding: 0.5rem 1.5rem;
+    margin-right: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+.card-2 .right .main-details .vertical-box .check .g{
+    width: 3rem;
+}
+.card-2 .right .main-details .vertical-box .check button{
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    color: white;
+    background-color: black;
+}
+.card-2 .right .main-details .vertical-box .check button:hover{
+    background-color: rgb(133, 255, 147);
+    color: black;
+    transition: all 0.3s ease-in-out ;
+}
+.card-2 .right .rating-cleanliness h2{
+    margin-top: 1rem;  
+    color: black;
+}
+.card-2 .right .rating-cleanliness .couples h3{
+    position: absolute;
+    margin-top: -0.15rem;
+}
+.card-2 .right .rating-cleanliness .families h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-2 .right .rating-cleanliness .solo h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-2 .right .rating-cleanliness .business h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-2 .right .vertical-box .room h2{
+    margin-top: 1rem;
+    color: black;
+}
+.card-2 .right .vertical-box .room .r{
+    display: flex;
+    align-items: center;
+}
+
+/*card-3*/
+.card-3 .left{
+    position: absolute;
+}
+.card-3{
+    margin: 2rem 0 7rem 5rem;
+}
+.card-3 .left .main .main-head h1{
+    margin-bottom:0.5rem;
+    color: black;
+}
+.card-3 .left .main .main-head .pointer{
+    margin-bottom: 0.5rem;
+}
+.card-3 .left .main .main-head .pointer i{
+    position: absolute;
+}
+.card-3 .left .main .main-head .pointer a{
+    padding-left: 0.5rem;
+    text-decoration: none;
+    color: black;
+}
+.card-3 .left .main .main-head .pointer a::after{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 0;
+    margin-left: 1.5rem;
+    background-color: black;
+    transition: all 0.5s ease-in-out;
+}
+.card-3 .left .main .main-head .pointer a:hover::after{
+    width:38.4%;
+}
+.card-3 .left .c-1{
+    max-width: 550px;
+    width: 100%;
+}
+.card-3 .left .carousel-img-list{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 1rem;
+    font-size: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+}
+.card-3 .left .carousel-img-list::-webkit-scrollbar{
+    display: none;
+}
+.card-3 .left .carousel-img-list .image-item{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.card-3 .right{
+    margin-top: 1rem;
+    margin-left: 37rem;
+    width:49rem;
+}
+.card-3 .right .main-details h2{
+    margin-bottom: 1rem;
+    color: black;
+}
+.card-3 .right .main-details .rating{
+    margin-bottom: 0.5rem;
+}
+.card-3 .right .main-details .checked{
+    color: orangered;
+}
+.card-3 .right .main-details .rating h4{
+    font-size: 1.2rem;
+}
+.card-3 .right .main-details .vertical-box .check h2{
+    margin-top: 1rem;
+}
+.card-3 .right .main-details .vertical-box .check input{
+    padding: 0.5rem 1.5rem;
+    margin-right: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+.card-3 .right .main-details .vertical-box .check .g{
+    width: 3rem;
+}
+.card-3 .right .main-details .vertical-box .check button{
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    color: white;
+    background-color: black;
+}
+.card-3 .right .main-details .vertical-box .check button:hover{
+    background-color: rgb(133, 255, 147);
+    color: black;
+    transition: all 0.3s ease-in-out ;
+}
+.card-3 .right .rating-cleanliness h2{
+    margin-top: 1rem;  
+    color: black;
+}
+.card-3 .right .rating-cleanliness .couples h3{
+    position: absolute;
+    margin-top: -0.15rem;
+}
+.card-3 .right .rating-cleanliness .families h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-3 .right .rating-cleanliness .solo h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-3 .right .rating-cleanliness .business h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-3 .right .vertical-box .room h2{
+    margin-top: 1rem;
+    color: black;
+}
+.card-3 .right .vertical-box .room .r{
+    display: flex;
+    align-items: center;
+}
+
+/*card-4*/
+.card-4 .left{
+    position: absolute;
+}
+.card-4{
+    margin: 2rem 0 7rem 5rem;
+}
+.card-4 .left .main .main-head h1{
+    margin-bottom:0.5rem;
+    color: black;
+}
+.card-4 .left .main .main-head .pointer{
+    margin-bottom: 0.5rem;
+}
+.card-4 .left .main .main-head .pointer i{
+    position: absolute;
+}
+.card-4 .left .main .main-head .pointer a{
+    padding-left: 0.5rem;
+    text-decoration: none;
+    color: black;
+}
+.card-4 .left .main .main-head .pointer a::after{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 0;
+    margin-left: 1.5rem;
+    background-color: black;
+    transition: all 0.5s ease-in-out;
+}
+.card-4 .left .main .main-head .pointer a:hover::after{
+    width:38.4%;
+}
+.card-4 .left .c-1{
+    max-width: 550px;
+    width: 100%;
+}
+.card-4 .left .carousel-img-list{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 1rem;
+    font-size: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+}
+.card-4 .left .carousel-img-list::-webkit-scrollbar{
+    display: none;
+}
+.card-4 .left .carousel-img-list .image-item{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.card-4 .right{
+    margin-top: 1rem;
+    margin-left: 37rem;
+    width:49rem;
+}
+.card-4 .right .main-details h2{
+    margin-bottom: 1rem;
+    color: black;
+}
+.card-4 .right .main-details .rating{
+    margin-bottom: 0.5rem;
+}
+.card-4 .right .main-details .checked{
+    color: orangered;
+}
+.card-4 .right .main-details .rating h4{
+    font-size: 1.2rem;
+}
+.card-4 .right .main-details .vertical-box .check h2{
+    margin-top: 1rem;
+}
+.card-4 .right .main-details .vertical-box .check input{
+    padding: 0.5rem 1.5rem;
+    margin-right: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+.card-4 .right .main-details .vertical-box .check .g{
+    width: 3rem;
+}
+.card-4 .right .main-details .vertical-box .check button{
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    color: white;
+    background-color: black;
+}
+.card-4 .right .main-details .vertical-box .check button:hover{
+    background-color: rgb(133, 255, 147);
+    color: black;
+    transition: all 0.3s ease-in-out ;
+}
+.card-4 .right .rating-cleanliness h2{
+    margin-top: 1rem;  
+    color: black;
+}
+.card-4 .right .rating-cleanliness .couples h3{
+    position: absolute;
+    margin-top: -0.15rem;
+}
+.card-4 .right .rating-cleanliness .families h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-4 .right .rating-cleanliness .solo h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-4 .right .rating-cleanliness .business h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-4 .right .vertical-box .room h2{
+    margin-top: 1rem;
+    color: black;
+}
+.card-4 .right .vertical-box .room .r{
+    display: flex;
+    align-items: center;
+}
+
+/*card-5*/
+.card-5 .left{
+    position: absolute;
+}
+.card-5{
+    margin: 2rem 0 7rem 5rem;
+}
+.card-5 .left .main .main-head h1{
+    margin-bottom:0.5rem;
+    color: black;
+}
+.card-5 .left .main .main-head .pointer{
+    margin-bottom: 0.5rem;
+}
+.card-5 .left .main .main-head .pointer i{
+    position: absolute;
+}
+.card-5 .left .main .main-head .pointer a{
+    padding-left: 0.5rem;
+    text-decoration: none;
+    color: black;
+}
+.card-5 .left .main .main-head .pointer a::after{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 0;
+    margin-left: 1.5rem;
+    background-color: black;
+    transition: all 0.5s ease-in-out;
+}
+.card-5 .left .main .main-head .pointer a:hover::after{
+    width:38.4%;
+}
+.card-5 .left .c-1{
+    max-width: 550px;
+    width: 100%;
+}
+.card-5 .left .carousel-img-list{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 1rem;
+    font-size: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+}
+.card-5 .left .carousel-img-list::-webkit-scrollbar{
+    display: none;
+}
+.card-5 .left .carousel-img-list .image-item{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.card-5 .right{
+    margin-top: 1rem;
+    margin-left: 37rem;
+    width:49rem;
+}
+.card-5 .right .main-details h2{
+    margin-bottom: 1rem;
+    color: black;
+}
+.card-5 .right .main-details .rating{
+    margin-bottom: 0.5rem;
+}
+.card-5 .right .main-details .checked{
+    color: orangered;
+}
+.card-5 .right .main-details .rating h4{
+    font-size: 1.2rem;
+}
+.card-5 .right .main-details .vertical-box .check h2{
+    margin-top: 1rem;
+}
+.card-5 .right .main-details .vertical-box .check input{
+    padding: 0.5rem 1.5rem;
+    margin-right: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+.card-5 .right .main-details .vertical-box .check .g{
+    width: 3rem;
+}
+.card-5 .right .main-details .vertical-box .check button{
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    color: white;
+    background-color: black;
+}
+.card-5 .right .main-details .vertical-box .check button:hover{
+    background-color: rgb(133, 255, 147);
+    color: black;
+    transition: all 0.3s ease-in-out ;
+}
+.card-5 .right .rating-cleanliness h2{
+    margin-top: 1rem;  
+    color: black;
+}
+.card-5 .right .rating-cleanliness .couples h3{
+    position: absolute;
+    margin-top: -0.15rem;
+}
+.card-5 .right .rating-cleanliness .families h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-5 .right .rating-cleanliness .solo h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-5 .right .rating-cleanliness .business h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-5 .right .vertical-box .room h2{
+    margin-top: 1rem;
+    color: black;
+}
+.card-5 .right .vertical-box .room .r{
+    display: flex;
+    align-items: center;
+}
+
+/*card-6*/
+.card-6 .left{
+    position: absolute;
+}
+.card-6{
+    margin: 2rem 0 7rem 5rem;
+}
+.card-6 .left .main .main-head h1{
+    margin-bottom:0.5rem;
+    color: black;
+}
+.card-6 .left .main .main-head .pointer{
+    margin-bottom: 0.5rem;
+}
+.card-6 .left .main .main-head .pointer i{
+    position: absolute;
+}
+.card-6 .left .main .main-head .pointer a{
+    padding-left: 0.5rem;
+    text-decoration: none;
+    color: black;
+}
+.card-6 .left .main .main-head .pointer a::after{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 0;
+    margin-left: 1.5rem;
+    background-color: black;
+    transition: all 0.5s ease-in-out;
+}
+.card-6 .left .main .main-head .pointer a:hover::after{
+    width:38.4%;
+}
+.card-6 .left .c-1{
+    max-width: 550px;
+    width: 100%;
+}
+.card-6 .left .carousel-img-list{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 1rem;
+    font-size: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+}
+.card-6 .left .carousel-img-list::-webkit-scrollbar{
+    display: none;
+}
+.card-6 .left .carousel-img-list .image-item{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.card-6 .right{
+    margin-top: 1rem;
+    margin-left: 37rem;
+    width:49rem;
+}
+.card-6 .right .main-details h2{
+    margin-bottom: 1rem;
+    color: black;
+}
+.card-6 .right .main-details .rating{
+    margin-bottom: 0.5rem;
+}
+.card-6 .right .main-details .checked{
+    color: orangered;
+}
+.card-6 .right .main-details .rating h4{
+    font-size: 1.2rem;
+}
+.card-6 .right .main-details .vertical-box .check h2{
+    margin-top: 1rem;
+}
+.card-6 .right .main-details .vertical-box .check input{
+    padding: 0.5rem 1.5rem;
+    margin-right: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+.card-6 .right .main-details .vertical-box .check .g{
+    width: 3rem;
+}
+.card-6 .right .main-details .vertical-box .check button{
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    color: white;
+    background-color: black;
+}
+.card-6 .right .main-details .vertical-box .check button:hover{
+    background-color: rgb(133, 255, 147);
+    color: black;
+    transition: all 0.3s ease-in-out ;
+}
+.card-6 .right .rating-cleanliness h2{
+    margin-top: 1rem;  
+    color: black;
+}
+.card-6 .right .rating-cleanliness .couples h3{
+    position: absolute;
+    margin-top: -0.15rem;
+}
+.card-6 .right .rating-cleanliness .families h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-6 .right .rating-cleanliness .solo h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-6 .right .rating-cleanliness .business h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-6 .right .vertical-box .room h2{
+    margin-top: 1rem;
+    color: black;
+}
+.card-6 .right .vertical-box .room .r{
+    display: flex;
+    align-items: center;
+}
+
+/*card-7*/
+.card-7 .left{
+    position: absolute;
+}
+.card-7{
+    margin: 2rem 0 7rem 5rem;
+}
+.card-7 .left .main .main-head h1{
+    margin-bottom:0.5rem;
+    color: black;
+}
+.card-7 .left .main .main-head .pointer{
+    margin-bottom: 0.5rem;
+}
+.card-7 .left .main .main-head .pointer i{
+    position: absolute;
+}
+.card-7 .left .main .main-head .pointer a{
+    padding-left: 0.5rem;
+    text-decoration: none;
+    color: black;
+}
+.card-7 .left .main .main-head .pointer a::after{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 0;
+    margin-left: 1.5rem;
+    background-color: black;
+    transition: all 0.5s ease-in-out;
+}
+.card-7 .left .main .main-head .pointer a:hover::after{
+    width:38.4%;
+}
+.card-7 .left .c-1{
+    max-width: 550px;
+    width: 100%;
+}
+.card-7 .left .carousel-img-list{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 1rem;
+    font-size: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+}
+.card-7 .left .carousel-img-list::-webkit-scrollbar{
+    display: none;
+}
+.card-7 .left .carousel-img-list .image-item{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.card-7 .right{
+    margin-top: 1rem;
+    margin-left: 37rem;
+    width:49rem;
+}
+.card-7 .right .main-details h2{
+    margin-bottom: 1rem;
+    color: black;
+}
+.card-7 .right .main-details .rating{
+    margin-bottom: 0.5rem;
+}
+.card-7 .right .main-details .checked{
+    color: orangered;
+}
+.card-7 .right .main-details .rating h4{
+    font-size: 1.2rem;
+}
+.card-7 .right .main-details .vertical-box .check h2{
+    margin-top: 1rem;
+}
+.card-7 .right .main-details .vertical-box .check input{
+    padding: 0.5rem 1.5rem;
+    margin-right: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+.card-7 .right .main-details .vertical-box .check .g{
+    width: 3rem;
+}
+.card-7 .right .main-details .vertical-box .check button{
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    color: white;
+    background-color: black;
+}
+.card-7 .right .main-details .vertical-box .check button:hover{
+    background-color: rgb(133, 255, 147);
+    color: black;
+    transition: all 0.3s ease-in-out ;
+}
+.card-7 .right .rating-cleanliness h2{
+    margin-top: 1rem;  
+    color: black;
+}
+.card-7 .right .rating-cleanliness .couples h3{
+    position: absolute;
+    margin-top: -0.15rem;
+}
+.card-7 .right .rating-cleanliness .families h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-7 .right .rating-cleanliness .solo h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-7 .right .rating-cleanliness .business h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-7 .right .vertical-box .room h2{
+    margin-top: 1rem;
+    color: black;
+}
+.card-7 .right .vertical-box .room .r{
+    display: flex;
+    align-items: center;
+}
+
+/*card-8*/
+.card-8 .left{
+    position: absolute;
+}
+.card-8{
+    margin: 2rem 0 7rem 5rem;
+}
+.card-8 .left .main .main-head h1{
+    margin-bottom:0.5rem;
+    color: black;
+}
+.card-8 .left .main .main-head .pointer{
+    margin-bottom: 0.5rem;
+}
+.card-8 .left .main .main-head .pointer i{
+    position: absolute;
+}
+.card-8 .left .main .main-head .pointer a{
+    padding-left: 0.5rem;
+    text-decoration: none;
+    color: black;
+}
+.card-8 .left .main .main-head .pointer a::after{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 0;
+    margin-left: 1.5rem;
+    background-color: black;
+    transition: all 0.5s ease-in-out;
+}
+.card-8 .left .main .main-head .pointer a:hover::after{
+    width:38.4%;
+}
+.card-8 .left .c-1{
+    max-width: 550px;
+    width: 100%;
+}
+.card-8 .left .carousel-img-list{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 1rem;
+    font-size: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+}
+.card-8 .left .carousel-img-list::-webkit-scrollbar{
+    display: none;
+}
+.card-8 .left .carousel-img-list .image-item{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.card-8 .right{
+    margin-top: 1rem;
+    margin-left: 37rem;
+    width:49rem;
+}
+.card-8 .right .main-details h2{
+    margin-bottom: 1rem;
+    color: black;
+}
+.card-8 .right .main-details .rating{
+    margin-bottom: 0.5rem;
+}
+.card-8 .right .main-details .checked{
+    color: orangered;
+}
+.card-8 .right .main-details .rating h4{
+    font-size: 1.2rem;
+}
+.card-8 .right .main-details .vertical-box .check h2{
+    margin-top: 1rem;
+}
+.card-8 .right .main-details .vertical-box .check input{
+    padding: 0.5rem 1.5rem;
+    margin-right: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+.card-8 .right .main-details .vertical-box .check .g{
+    width: 3rem;
+}
+.card-8 .right .main-details .vertical-box .check button{
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    color: white;
+    background-color: black;
+}
+.card-8 .right .main-details .vertical-box .check button:hover{
+    background-color: rgb(133, 255, 147);
+    color: black;
+    transition: all 0.3s ease-in-out ;
+}
+.card-8 .right .rating-cleanliness h2{
+    margin-top: 1rem;  
+    color: black;
+}
+.card-8 .right .rating-cleanliness .couples h3{
+    position: absolute;
+    margin-top: -0.15rem;
+}
+.card-8 .right .rating-cleanliness .families h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-8 .right .rating-cleanliness .solo h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-8 .right .rating-cleanliness .business h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-8 .right .vertical-box .room h2{
+    margin-top: 1rem;
+    color: black;
+}
+.card-8 .right .vertical-box .room .r{
+    display: flex;
+    align-items: center;
+}
+
+/*card-9*/
+.card-9 .left{
+    position: absolute;
+}
+.card-9{
+    margin: 2rem 0 7rem 5rem;
+}
+.card-9 .left .main .main-head h1{
+    margin-bottom:0.5rem;
+    color: black;
+}
+.card-9 .left .main .main-head .pointer{
+    margin-bottom: 0.5rem;
+}
+.card-9 .left .main .main-head .pointer i{
+    position: absolute;
+}
+.card-9 .left .main .main-head .pointer a{
+    padding-left: 0.5rem;
+    text-decoration: none;
+    color: black;
+}
+.card-9 .left .main .main-head .pointer a::after{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 0;
+    margin-left: 1.5rem;
+    background-color: black;
+    transition: all 0.5s ease-in-out;
+}
+.card-9 .left .main .main-head .pointer a:hover::after{
+    width:38.4%;
+}
+.card-9 .left .c-1{
+    max-width: 550px;
+    width: 100%;
+}
+.card-9 .left .carousel-img-list{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 1rem;
+    font-size: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+}
+.card-9 .left .carousel-img-list::-webkit-scrollbar{
+    display: none;
+}
+.card-9 .left .carousel-img-list .image-item{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.card-9 .right{
+    margin-top: 1rem;
+    margin-left: 37rem;
+    width:49rem;
+}
+.card-9 .right .main-details h2{
+    margin-bottom: 1rem;
+    color: black;
+}
+.card-9 .right .main-details .rating{
+    margin-bottom: 0.5rem;
+}
+.card-9 .right .main-details .checked{
+    color: orangered;
+}
+.card-9 .right .main-details .rating h4{
+    font-size: 1.2rem;
+}
+.card-9 .right .main-details .vertical-box .check h2{
+    margin-top: 1rem;
+}
+.card-9 .right .main-details .vertical-box .check input{
+    padding: 0.5rem 1.5rem;
+    margin-right: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+.card-9 .right .main-details .vertical-box .check .g{
+    width: 3rem;
+}
+.card-9 .right .main-details .vertical-box .check button{
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    color: white;
+    background-color: black;
+}
+.card-9 .right .main-details .vertical-box .check button:hover{
+    background-color: rgb(133, 255, 147);
+    color: black;
+    transition: all 0.3s ease-in-out ;
+}
+.card-9 .right .rating-cleanliness h2{
+    margin-top: 1rem;  
+    color: black;
+}
+.card-9 .right .rating-cleanliness .couples h3{
+    position: absolute;
+    margin-top: -0.15rem;
+}
+.card-9 .right .rating-cleanliness .families h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-9 .right .rating-cleanliness .solo h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-9 .right .rating-cleanliness .business h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-9 .right .vertical-box .room h2{
+    margin-top: 1rem;
+    color: black;
+}
+.card-9 .right .vertical-box .room .r{
+    display: flex;
+    align-items: center;
+}
+
+/*card-10*/
+.card-10 .left{
+    position: absolute;
+}
+.card-10{
+    margin: 2rem 0 7rem 5rem;
+}
+.card-10 .left .main .main-head h1{
+    margin-bottom:0.5rem;
+    color: black;
+}
+.card-10 .left .main .main-head .pointer{
+    margin-bottom: 0.5rem;
+}
+.card-10 .left .main .main-head .pointer i{
+    position: absolute;
+}
+.card-10 .left .main .main-head .pointer a{
+    padding-left: 0.5rem;
+    text-decoration: none;
+    color: black;
+}
+.card-10 .left .main .main-head .pointer a::after{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 0;
+    margin-left: 1.5rem;
+    background-color: black;
+    transition: all 0.5s ease-in-out;
+}
+.card-10 .left .main .main-head .pointer a:hover::after{
+    width:38.4%;
+}
+.card-10 .left .c-1{
+    max-width: 550px;
+    width: 100%;
+}
+.card-10 .left .carousel-img-list{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 1rem;
+    font-size: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+}
+.card-10 .left .carousel-img-list::-webkit-scrollbar{
+    display: none;
+}
+.card-10 .left .carousel-img-list .image-item{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.card-10 .right{
+    margin-top: 1rem;
+    margin-left: 37rem;
+    width:49rem;
+}
+.card-10 .right .main-details h2{
+    margin-bottom: 1rem;
+    color: black;
+}
+.card-10 .right .main-details .rating{
+    margin-bottom: 0.5rem;
+}
+.card-10 .right .main-details .checked{
+    color: orangered;
+}
+.card-10 .right .main-details .rating h4{
+    font-size: 1.2rem;
+}
+.card-10 .right .main-details .vertical-box .check h2{
+    margin-top: 1rem;
+}
+.card-10 .right .main-details .vertical-box .check input{
+    padding: 0.5rem 1.5rem;
+    margin-right: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+.card-10 .right .main-details .vertical-box .check .g{
+    width: 3rem;
+}
+.card-10 .right .main-details .vertical-box .check button{
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    color: white;
+    background-color: black;
+}
+.card-10 .right .main-details .vertical-box .check button:hover{
+    background-color: rgb(133, 255, 147);
+    color: black;
+    transition: all 0.3s ease-in-out ;
+}
+.card-10 .right .rating-cleanliness h2{
+    margin-top: 1rem;  
+    color: black;
+}
+.card-10 .right .rating-cleanliness .couples h3{
+    position: absolute;
+    margin-top: -0.15rem;
+}
+.card-10 .right .rating-cleanliness .families h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-10 .right .rating-cleanliness .solo h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-10 .right .rating-cleanliness .business h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-10 .right .vertical-box .room h2{
+    margin-top: 1rem;
+    color: black;
+}
+.card-10 .right .vertical-box .room .r{
+    display: flex;
+    align-items: center;
+}
+
+/*card-11*/
+.card-11 .left{
+    position: absolute;
+}
+.card-11{
+    margin: 2rem 0 7rem 5rem;
+}
+.card-11 .left .main .main-head h1{
+    margin-bottom:0.5rem;
+    color: black;
+}
+.card-11 .left .main .main-head .pointer{
+    margin-bottom: 0.5rem;
+}
+.card-11 .left .main .main-head .pointer i{
+    position: absolute;
+}
+.card-11 .left .main .main-head .pointer a{
+    padding-left: 0.5rem;
+    text-decoration: none;
+    color: black;
+}
+.card-11 .left .main .main-head .pointer a::after{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 0;
+    margin-left: 1.5rem;
+    background-color: black;
+    transition: all 0.5s ease-in-out;
+}
+.card-11 .left .main .main-head .pointer a:hover::after{
+    width:38.4%;
+}
+.card-11 .left .c-1{
+    max-width: 550px;
+    width: 100%;
+}
+.card-11 .left .carousel-img-list{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 1rem;
+    font-size: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+}
+.card-11 .left .carousel-img-list::-webkit-scrollbar{
+    display: none;
+}
+.card-11 .left .carousel-img-list .image-item{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.card-11 .right{
+    margin-top: 1rem;
+    margin-left: 37rem;
+    width:49rem;
+}
+.card-11 .right .main-details h2{
+    margin-bottom: 1rem;
+    color: black;
+}
+.card-11 .right .main-details .rating{
+    margin-bottom: 0.5rem;
+}
+.card-11 .right .main-details .checked{
+    color: orangered;
+}
+.card-11 .right .main-details .rating h4{
+    font-size: 1.2rem;
+}
+.card-11 .right .main-details .vertical-box .check h2{
+    margin-top: 1rem;
+}
+.card-11 .right .main-details .vertical-box .check input{
+    padding: 0.5rem 1.5rem;
+    margin-right: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+.card-11 .right .main-details .vertical-box .check .g{
+    width: 3rem;
+}
+.card-11 .right .main-details .vertical-box .check button{
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    color: white;
+    background-color: black;
+}
+.card-11 .right .main-details .vertical-box .check button:hover{
+    background-color: rgb(133, 255, 147);
+    color: black;
+    transition: all 0.3s ease-in-out ;
+}
+.card-11 .right .rating-cleanliness h2{
+    margin-top: 1rem;  
+    color: black;
+}
+.card-11 .right .rating-cleanliness .couples h3{
+    position: absolute;
+    margin-top: -0.15rem;
+}
+.card-11 .right .rating-cleanliness .families h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-11 .right .rating-cleanliness .solo h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-11 .right .rating-cleanliness .business h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-11 .right .vertical-box .room h2{
+    margin-top: 1rem;
+    color: black;
+}
+.card-11 .right .vertical-box .room .r{
+    display: flex;
+    align-items: center;
+}
+
+/*card-12*/
+.card-12 .left{
+    position: absolute;
+}
+.card-12{
+    margin: 2rem 0 7rem 5rem;
+}
+.card-12 .left .main .main-head h1{
+    margin-bottom:0.5rem;
+    color: black;
+}
+.card-12 .left .main .main-head .pointer{
+    margin-bottom: 0.5rem;
+}
+.card-12 .left .main .main-head .pointer i{
+    position: absolute;
+}
+.card-12 .left .main .main-head .pointer a{
+    padding-left: 0.5rem;
+    text-decoration: none;
+    color: black;
+}
+.card-12 .left .main .main-head .pointer a::after{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 0;
+    margin-left: 1.5rem;
+    background-color: black;
+    transition: all 0.5s ease-in-out;
+}
+.card-12 .left .main .main-head .pointer a:hover::after{
+    width:38.4%;
+}
+.card-12 .left .c-1{
+    max-width: 550px;
+    width: 100%;
+}
+.card-12 .left .carousel-img-list{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 1rem;
+    font-size: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+}
+.card-12 .left .carousel-img-list::-webkit-scrollbar{
+    display: none;
+}
+.card-12 .left .carousel-img-list .image-item{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.card-12 .right{
+    margin-top: 1rem;
+    margin-left: 37rem;
+    width:49rem;
+}
+.card-12 .right .main-details h2{
+    margin-bottom: 1rem;
+    color: black;
+}
+.card-12 .right .main-details .rating{
+    margin-bottom: 0.5rem;
+}
+.card-12 .right .main-details .checked{
+    color: orangered;
+}
+.card-12 .right .main-details .rating h4{
+    font-size: 1.2rem;
+}
+.card-12 .right .main-details .vertical-box .check h2{
+    margin-top: 1rem;
+}
+.card-12 .right .main-details .vertical-box .check input{
+    padding: 0.5rem 1.5rem;
+    margin-right: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+.card-12 .right .main-details .vertical-box .check .g{
+    width: 3rem;
+}
+.card-12 .right .main-details .vertical-box .check button{
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    color: white;
+    background-color: black;
+}
+.card-12 .right .main-details .vertical-box .check button:hover{
+    background-color: rgb(133, 255, 147);
+    color: black;
+    transition: all 0.3s ease-in-out ;
+}
+.card-12 .right .rating-cleanliness h2{
+    margin-top: 1rem;  
+    color: black;
+}
+.card-12 .right .rating-cleanliness .couples h3{
+    position: absolute;
+    margin-top: -0.15rem;
+}
+.card-12 .right .rating-cleanliness .families h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-12 .right .rating-cleanliness .solo h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-12 .right .rating-cleanliness .business h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-12 .right .vertical-box .room h2{
+    margin-top: 1rem;
+    color: black;
+}
+.card-12 .right .vertical-box .room .r{
+    display: flex;
+    align-items: center;
+}
+
+/*card-13*/
+.card-13 .left{
+    position: absolute;
+}
+.card-13{
+    margin: 2rem 0 7rem 5rem;
+}
+.card-13 .left .main .main-head h1{
+    margin-bottom:0.5rem;
+    color: black;
+}
+.card-13 .left .main .main-head .pointer{
+    margin-bottom: 0.5rem;
+}
+.card-13 .left .main .main-head .pointer i{
+    position: absolute;
+}
+.card-13 .left .main .main-head .pointer a{
+    padding-left: 0.5rem;
+    text-decoration: none;
+    color: black;
+}
+.card-13 .left .main .main-head .pointer a::after{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 0;
+    margin-left: 1.5rem;
+    background-color: black;
+    transition: all 0.5s ease-in-out;
+}
+.card-13 .left .main .main-head .pointer a:hover::after{
+    width:38.4%;
+}
+.card-13 .left .c-1{
+    max-width: 550px;
+    width: 100%;
+}
+.card-13 .left .carousel-img-list{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 1rem;
+    font-size: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+}
+.card-13 .left .carousel-img-list::-webkit-scrollbar{
+    display: none;
+}
+.card-13 .left .carousel-img-list .image-item{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.card-13 .right{
+    margin-top: 1rem;
+    margin-left: 37rem;
+    width:49rem;
+}
+.card-13 .right .main-details h2{
+    margin-bottom: 1rem;
+    color: black;
+}
+.card-13 .right .main-details .rating{
+    margin-bottom: 0.5rem;
+}
+.card-13 .right .main-details .checked{
+    color: orangered;
+}
+.card-13 .right .main-details .rating h4{
+    font-size: 1.2rem;
+}
+.card-13 .right .main-details .vertical-box .check h2{
+    margin-top: 1rem;
+}
+.card-13 .right .main-details .vertical-box .check input{
+    padding: 0.5rem 1.5rem;
+    margin-right: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+.card-13 .right .main-details .vertical-box .check .g{
+    width: 3rem;
+}
+.card-13 .right .main-details .vertical-box .check button{
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    color: white;
+    background-color: black;
+}
+.card-13 .right .main-details .vertical-box .check button:hover{
+    background-color: rgb(133, 255, 147);
+    color: black;
+    transition: all 0.3s ease-in-out ;
+}
+.card-13 .right .rating-cleanliness h2{
+    margin-top: 1rem;  
+    color: black;
+}
+.card-13 .right .rating-cleanliness .couples h3{
+    position: absolute;
+    margin-top: -0.15rem;
+}
+.card-13 .right .rating-cleanliness .families h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-13 .right .rating-cleanliness .solo h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-13 .right .rating-cleanliness .business h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-13 .right .vertical-box .room h2{
+    margin-top: 1rem;
+    color: black;
+}
+.card-13 .right .vertical-box .room .r{
+    display: flex;
+    align-items: center;
+}
+
+/*card-14*/
+.card-14 .left{
+    position: absolute;
+}
+.card-14{
+    margin: 2rem 0 7rem 5rem;
+}
+.card-14 .left .main .main-head h1{
+    margin-bottom:0.5rem;
+    color: black;
+}
+.card-14 .left .main .main-head .pointer{
+    margin-bottom: 0.5rem;
+}
+.card-14 .left .main .main-head .pointer i{
+    position: absolute;
+}
+.card-14 .left .main .main-head .pointer a{
+    padding-left: 0.5rem;
+    text-decoration: none;
+    color: black;
+}
+.card-14 .left .main .main-head .pointer a::after{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 0;
+    margin-left: 1.5rem;
+    background-color: black;
+    transition: all 0.5s ease-in-out;
+}
+.card-14 .left .main .main-head .pointer a:hover::after{
+    width:38.4%;
+}
+.card-14 .left .c-1{
+    max-width: 550px;
+    width: 100%;
+}
+.card-14 .left .carousel-img-list{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 1rem;
+    font-size: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+}
+.card-14 .left .carousel-img-list::-webkit-scrollbar{
+    display: none;
+}
+.card-14 .left .carousel-img-list .image-item{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.card-14 .right{
+    margin-top: 1rem;
+    margin-left: 37rem;
+    width:49rem;
+}
+.card-14 .right .main-details h2{
+    margin-bottom: 1rem;
+    color: black;
+}
+.card-14 .right .main-details .rating{
+    margin-bottom: 0.5rem;
+}
+.card-14 .right .main-details .checked{
+    color: orangered;
+}
+.card-14 .right .main-details .rating h4{
+    font-size: 1.2rem;
+}
+.card-14 .right .main-details .vertical-box .check h2{
+    margin-top: 1rem;
+}
+.card-14 .right .main-details .vertical-box .check input{
+    padding: 0.5rem 1.5rem;
+    margin-right: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+.card-14 .right .main-details .vertical-box .check .g{
+    width: 3rem;
+}
+.card-14 .right .main-details .vertical-box .check button{
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    color: white;
+    background-color: black;
+}
+.card-14 .right .main-details .vertical-box .check button:hover{
+    background-color: rgb(133, 255, 147);
+    color: black;
+    transition: all 0.3s ease-in-out ;
+}
+.card-14 .right .rating-cleanliness h2{
+    margin-top: 1rem;  
+    color: black;
+}
+.card-14 .right .rating-cleanliness .couples h3{
+    position: absolute;
+    margin-top: -0.15rem;
+}
+.card-14 .right .rating-cleanliness .families h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-14 .right .rating-cleanliness .solo h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-14 .right .rating-cleanliness .business h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-14 .right .vertical-box .room h2{
+    margin-top: 1rem;
+    color: black;
+}
+.card-14 .right .vertical-box .room .r{
+    display: flex;
+    align-items: center;
+}
+
+/*card-15*/
+.card-15 .left{
+    position: absolute;
+}
+.card-15{
+    margin: 2rem 0 0 5rem;
+}
+.card-15 .left .main .main-head h1{
+    margin-bottom:0.5rem;
+    color: black;
+}
+.card-15 .left .main .main-head .pointer{
+    margin-bottom: 0.5rem;
+}
+.card-15 .left .main .main-head .pointer i{
+    position: absolute;
+}
+.card-15 .left .main .main-head .pointer a{
+    padding-left: 0.5rem;
+    text-decoration: none;
+    color: black;
+}
+.card-15 .left .main .main-head .pointer a::after{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 0;
+    margin-left: 1.5rem;
+    background-color: black;
+    transition: all 0.5s ease-in-out;
+}
+.card-15 .left .main .main-head .pointer a:hover::after{
+    width:38.4%;
+}
+.card-15 .left .c-1{
+    max-width: 550px;
+    width: 100%;
+}
+.card-15 .left .carousel-img-list{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 1rem;
+    font-size: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+}
+.card-15 .left .carousel-img-list::-webkit-scrollbar{
+    display: none;
+}
+.card-15 .left .carousel-img-list .image-item{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.card-15 .right{
+    margin-top: 1rem;
+    margin-left: 37rem;
+    width:49rem;
+}
+.card-15 .right .main-details h2{
+    margin-bottom: 1rem;
+    color: black;
+}
+.card-15 .right .main-details .rating{
+    margin-bottom: 0.5rem;
+}
+.card-15 .right .main-details .checked{
+    color: orangered;
+}
+.card-15 .right .main-details .rating h4{
+    font-size: 1.2rem;
+}
+.card-15 .right .main-details .vertical-box .check h2{
+    margin-top: 1rem;
+}
+.card-15 .right .main-details .vertical-box .check input{
+    padding: 0.5rem 1.5rem;
+    margin-right: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+.card-15 .right .main-details .vertical-box .check .g{
+    width: 3rem;
+}
+.card-15 .right .main-details .vertical-box .check button{
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    color: white;
+    background-color: black;
+}
+.card-15 .right .main-details .vertical-box .check button:hover{
+    background-color: rgb(133, 255, 147);
+    color: black;
+    transition: all 0.3s ease-in-out ;
+}
+.card-15 .right .rating-cleanliness h2{
+    margin-top: 1rem;  
+    color: black;
+}
+.card-15 .right .rating-cleanliness .couples h3{
+    position: absolute;
+    margin-top: -0.15rem;
+}
+.card-15 .right .rating-cleanliness .families h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-15 .right .rating-cleanliness .solo h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-15 .right .rating-cleanliness .business h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-15 .right .vertical-box .room h2{
+    margin-top: 1rem;
+    color: black;
+}
+.card-15 .right .vertical-box .room .r{
+    display: flex;
+    align-items: center;
+}
+
+
+/*card-16*/
+.card-16 .left{
+    position: absolute;
+}
+.card-16{
+    margin: 2rem 0 0 5rem;
+}
+.card-16 .left .main .main-head h1{
+    margin-bottom:0.5rem;
+    color: black;
+}
+.card-16 .left .main .main-head .pointer{
+    margin-bottom: 0.5rem;
+}
+.card-16 .left .main .main-head .pointer i{
+    position: absolute;
+}
+.card-16 .left .main .main-head .pointer a{
+    padding-left: 0.5rem;
+    text-decoration: none;
+    color: black;
+}
+.card-16 .left .main .main-head .pointer a::after{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 0;
+    margin-left: 1.5rem;
+    background-color: black;
+    transition: all 0.5s ease-in-out;
+}
+.card-16 .left .main .main-head .pointer a:hover::after{
+    width:38.4%;
+}
+.card-16 .left .c-1{
+    max-width: 550px;
+    width: 100%;
+}
+.card-16 .left .carousel-img-list{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 1rem;
+    font-size: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+}
+.card-16 .left .carousel-img-list::-webkit-scrollbar{
+    display: none;
+}
+.card-16 .left .carousel-img-list .image-item{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.card-16 .right{
+    margin-top: 1rem;
+    margin-left: 37rem;
+    width:49rem;
+}
+.card-6 .right .main-details h2{
+    margin-bottom: 1rem;
+    color: black;
+}
+.card-16 .right .main-details .rating{
+    margin-bottom: 0.5rem;
+}
+.card-16 .right .main-details .checked{
+    color: orangered;
+}
+.card-16 .right .main-details .rating h4{
+    font-size: 1.2rem;
+}
+.card-16 .right .main-details .vertical-box .check h2{
+    margin-top: 1rem;
+}
+.card-16 .right .main-details .vertical-box .check input{
+    padding: 0.5rem 1.5rem;
+    margin-right: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+.card-16 .right .main-details .vertical-box .check .g{
+    width: 3rem;
+}
+.card-16 .right .main-details .vertical-box .check button{
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    color: white;
+    background-color: black;
+}
+.card-16 .right .main-details .vertical-box .check button:hover{
+    background-color: rgb(133, 255, 147);
+    color: black;
+    transition: all 0.3s ease-in-out ;
+}
+.card-16 .right .rating-cleanliness h2{
+    margin-top: 1rem;  
+    color: black;
+}
+.card-16 .right .rating-cleanliness .couples h3{
+    position: absolute;
+    margin-top: -0.15rem;
+}
+.card-16 .right .rating-cleanliness .families h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-16 .right .vertical-box .room h2{
+    margin-top: 1rem;
+    color: black;
+}
+.card-16 .right .vertical-box .room .r{
+    display: flex;
+    align-items: center;
+}
+
+/*card-17*/
+.card-17 .left{
+    position: absolute;
+}
+.card-17{
+    margin: 2rem 0 0 5rem;
+}
+.card-17 .left .main .main-head h1{
+    margin-bottom:0.5rem;
+    color: black;
+}
+.card-17 .left .main .main-head .pointer{
+    margin-bottom: 0.5rem;
+}
+.card-17 .left .main .main-head .pointer i{
+    position: absolute;
+}
+.card-17 .left .main .main-head .pointer a{
+    padding-left: 0.5rem;
+    text-decoration: none;
+    color: black;
+}
+.card-17 .left .main .main-head .pointer a::after{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 0;
+    margin-left: 1.5rem;
+    background-color: black;
+    transition: all 0.5s ease-in-out;
+}
+.card-17 .left .main .main-head .pointer a:hover::after{
+    width:38.4%;
+}
+.card-17 .left .c-1{
+    max-width: 550px;
+    width: 100%;
+}
+.card-17 .left .carousel-img-list{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 1rem;
+    font-size: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+}
+.card-17 .left .carousel-img-list::-webkit-scrollbar{
+    display: none;
+}
+.card-17 .left .carousel-img-list .image-item{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.card-17 .right{
+    margin-top: 1rem;
+    margin-left: 37rem;
+    width:49rem;
+}
+.card-17 .right .main-details h2{
+    margin-bottom: 1rem;
+    color: black;
+}
+.card-17 .right .main-details .rating{
+    margin-bottom: 0.5rem;
+}
+.card-17 .right .main-details .checked{
+    color: orangered;
+}
+.card-17 .right .main-details .rating h4{
+    font-size: 1.2rem;
+}
+.card-17 .right .main-details .vertical-box .check h2{
+    margin-top: 1rem;
+}
+.card-17 .right .main-details .vertical-box .check input{
+    padding: 0.5rem 1.5rem;
+    margin-right: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+.card-17 .right .main-details .vertical-box .check .g{
+    width: 3rem;
+}
+.card-17 .right .main-details .vertical-box .check button{
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    color: white;
+    background-color: black;
+}
+.card-17 .right .main-details .vertical-box .check button:hover{
+    background-color: rgb(133, 255, 147);
+    color: black;
+    transition: all 0.3s ease-in-out ;
+}
+.card-17 .right .rating-cleanliness h2{
+    margin-top: 1rem;  
+    color: black;
+}
+.card-17 .right .rating-cleanliness .couples h3{
+    position: absolute;
+    margin-top: -0.15rem;
+}
+.card-17 .right .rating-cleanliness .families h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-17 .right .rating-cleanliness .solo h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-17 .right .rating-cleanliness .business h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-17 .right .vertical-box .room h2{
+    margin-top: 1rem;
+    color: black;
+}
+.card-17 .right .vertical-box .room .r{
+    display: flex;
+    align-items: center;
+}
+
+/*card-18*/
+.card-18 .left{
+    position: absolute;
+}
+.card-18{
+    margin: 2rem 0 0 5rem;
+}
+.card-18 .left .main .main-head h1{
+    margin-bottom:0.5rem;
+    color: black;
+}
+.card-18 .left .main .main-head .pointer{
+    margin-bottom: 0.5rem;
+}
+.card-18 .left .main .main-head .pointer i{
+    position: absolute;
+}
+.card-18 .left .main .main-head .pointer a{
+    padding-left: 0.5rem;
+    text-decoration: none;
+    color: black;
+}
+.card-18 .left .main .main-head .pointer a::after{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 0;
+    margin-left: 1.5rem;
+    background-color: black;
+    transition: all 0.5s ease-in-out;
+}
+.card-18 .left .main .main-head .pointer a:hover::after{
+    width:38.4%;
+}
+.card-18 .left .c-1{
+    max-width: 550px;
+    width: 100%;
+}
+.card-18 .left .carousel-img-list{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 1rem;
+    font-size: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+}
+.card-18 .left .carousel-img-list::-webkit-scrollbar{
+    display: none;
+}
+.card-18 .left .carousel-img-list .image-item{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.card-18 .right{
+    margin-top: 1rem;
+    margin-left: 37rem;
+    width:49rem;
+}
+.card-18 .right .main-details h2{
+    margin-bottom: 1rem;
+    color: black;
+}
+.card-18 .right .main-details .rating{
+    margin-bottom: 0.5rem;
+}
+.card-18 .right .main-details .checked{
+    color: orangered;
+}
+.card-18 .right .main-details .rating h4{
+    font-size: 1.2rem;
+}
+.card-18 .right .main-details .vertical-box .check h2{
+    margin-top: 1rem;
+}
+.card-18 .right .main-details .vertical-box .check input{
+    padding: 0.5rem 1.5rem;
+    margin-right: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+.card-18 .right .main-details .vertical-box .check .g{
+    width: 3rem;
+}
+.card-18 .right .main-details .vertical-box .check button{
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    color: white;
+    background-color: black;
+}
+.card-18 .right .main-details .vertical-box .check button:hover{
+    background-color: rgb(133, 255, 147);
+    color: black;
+    transition: all 0.3s ease-in-out ;
+}
+.card-18 .right .rating-cleanliness h2{
+    margin-top: 1rem;  
+    color: black;
+}
+.card-18 .right .rating-cleanliness .couples h3{
+    position: absolute;
+    margin-top: -0.15rem;
+}
+.card-18 .right .rating-cleanliness .families h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-18 .right .rating-cleanliness .solo h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-18 .right .rating-cleanliness .business h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-18 .right .vertical-box .room h2{
+    margin-top: 1rem;
+    color: black;
+}
+.card-18 .right .vertical-box .room .r{
+    display: flex;
+    align-items: center;
+}
+
+/*card-19*/
+.card-19 .left{
+    position: absolute;
+}
+.card-19{
+    margin: 2rem 0 0 5rem;
+}
+.card-19 .left .main .main-head h1{
+    margin-bottom:0.5rem;
+    color: black;
+}
+.card-19 .left .main .main-head .pointer{
+    margin-bottom: 0.5rem;
+}
+.card-19 .left .main .main-head .pointer i{
+    position: absolute;
+}
+.card-19 .left .main .main-head .pointer a{
+    padding-left: 0.5rem;
+    text-decoration: none;
+    color: black;
+}
+.card-19 .left .main .main-head .pointer a::after{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 0;
+    margin-left: 1.5rem;
+    background-color: black;
+    transition: all 0.5s ease-in-out;
+}
+.card-19 .left .main .main-head .pointer a:hover::after{
+    width:38.4%;
+}
+.card-19 .left .c-1{
+    max-width: 550px;
+    width: 100%;
+}
+.card-19 .left .carousel-img-list{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 1rem;
+    font-size: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+}
+.card-19 .left .carousel-img-list::-webkit-scrollbar{
+    display: none;
+}
+.card-19 .left .carousel-img-list .image-item{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.card-19 .right{
+    margin-top: 1rem;
+    margin-left: 37rem;
+    width:49rem;
+}
+.card-19 .right .main-details h2{
+    margin-bottom: 1rem;
+    color: black;
+}
+.card-19 .right .main-details .rating{
+    margin-bottom: 0.5rem;
+}
+.card-19 .right .main-details .checked{
+    color: orangered;
+}
+.card-19 .right .main-details .rating h4{
+    font-size: 1.2rem;
+}
+.card-19 .right .main-details .vertical-box .check h2{
+    margin-top: 1rem;
+}
+.card-19 .right .main-details .vertical-box .check input{
+    padding: 0.5rem 1.5rem;
+    margin-right: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+.card-19 .right .main-details .vertical-box .check .g{
+    width: 3rem;
+}
+.card-19 .right .main-details .vertical-box .check button{
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    color: white;
+    background-color: black;
+}
+.card-19 .right .main-details .vertical-box .check button:hover{
+    background-color: rgb(133, 255, 147);
+    color: black;
+    transition: all 0.3s ease-in-out ;
+}
+.card-19 .right .rating-cleanliness h2{
+    margin-top: 1rem;  
+    color: black;
+}
+.card-19 .right .rating-cleanliness .couples h3{
+    position: absolute;
+    margin-top: -0.15rem;
+}
+.card-19 .right .rating-cleanliness .families h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-19 .right .rating-cleanliness .solo h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-19 .right .rating-cleanliness .business h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-19 .right .vertical-box .room h2{
+    margin-top: 1rem;
+    color: black;
+}
+.card-19 .right .vertical-box .room .r{
+    display: flex;
+    align-items: center;
+}
+
+/*card-20*/
+.card-20 .left{
+    position: absolute;
+}
+.card-20{
+    margin: 2rem 0 0 5rem;
+}
+.card-20 .left .main .main-head h1{
+    margin-bottom:0.5rem;
+    color: black;
+}
+.card-20 .left .main .main-head .pointer{
+    margin-bottom: 0.5rem;
+}
+.card-20 .left .main .main-head .pointer i{
+    position: absolute;
+}
+.card-20 .left .main .main-head .pointer a{
+    padding-left: 0.5rem;
+    text-decoration: none;
+    color: black;
+}
+.card-20 .left .main .main-head .pointer a::after{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 0;
+    margin-left: 1.5rem;
+    background-color: black;
+    transition: all 0.5s ease-in-out;
+}
+.card-20 .left .main .main-head .pointer a:hover::after{
+    width:38.4%;
+}
+.card-20 .left .c-1{
+    max-width: 550px;
+    width: 100%;
+}
+.card-20 .left .carousel-img-list{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 1rem;
+    font-size: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+}
+.card-20 .left .carousel-img-list::-webkit-scrollbar{
+    display: none;
+}
+.card-20 .left .carousel-img-list .image-item{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.card-20 .right{
+    margin-top: 1rem;
+    margin-left: 37rem;
+    width:49rem;
+}
+.card-20 .right .main-details h2{
+    margin-bottom: 1rem;
+    color: black;
+}
+.card-20 .right .main-details .rating{
+    margin-bottom: 0.5rem;
+}
+.card-20 .right .main-details .checked{
+    color: orangered;
+}
+.card-20 .right .main-details .rating h4{
+    font-size: 1.2rem;
+}
+.card-20 .right .main-details .vertical-box .check h2{
+    margin-top: 1rem;
+}
+.card-20 .right .main-details .vertical-box .check input{
+    padding: 0.5rem 1.5rem;
+    margin-right: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+.card-20 .right .main-details .vertical-box .check .g{
+    width: 3rem;
+}
+.card-20 .right .main-details .vertical-box .check button{
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    color: white;
+    background-color: black;
+}
+.card-20 .right .main-details .vertical-box .check button:hover{
+    background-color: rgb(133, 255, 147);
+    color: black;
+    transition: all 0.3s ease-in-out ;
+}
+.card-20 .right .rating-cleanliness h2{
+    margin-top: 1rem;  
+    color: black;
+}
+.card-20 .right .rating-cleanliness .couples h3{
+    position: absolute;
+    margin-top: -0.15rem;
+}
+.card-20 .right .rating-cleanliness .families h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-20 .right .rating-cleanliness .solo h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-20 .right .rating-cleanliness .business h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-20 .right .vertical-box .room h2{
+    margin-top: 1rem;
+    color: black;
+}
+.card-20 .right .vertical-box .room .r{
+    display: flex;
+    align-items: center;
+}
+
+/*card-21*/
+.card-21 .left{
+    position: absolute;
+}
+.card-21{
+    margin: 2rem 0 0 5rem;
+}
+.card-21 .left .main .main-head h1{
+    margin-bottom:0.5rem;
+    color: black;
+}
+.card-21 .left .main .main-head .pointer{
+    margin-bottom: 0.5rem;
+}
+.card-21 .left .main .main-head .pointer i{
+    position: absolute;
+}
+.card-21 .left .main .main-head .pointer a{
+    padding-left: 0.5rem;
+    text-decoration: none;
+    color: black;
+}
+.card-21 .left .main .main-head .pointer a::after{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 0;
+    margin-left: 1.5rem;
+    background-color: black;
+    transition: all 0.5s ease-in-out;
+}
+.card-21 .left .main .main-head .pointer a:hover::after{
+    width:38.4%;
+}
+.card-21 .left .c-1{
+    max-width: 550px;
+    width: 100%;
+}
+.card-21 .left .carousel-img-list{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 1rem;
+    font-size: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+}
+.card-21 .left .carousel-img-list::-webkit-scrollbar{
+    display: none;
+}
+.card-21 .left .carousel-img-list .image-item{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.card-21 .right{
+    margin-top: 1rem;
+    margin-left: 37rem;
+    width:49rem;
+}
+.card-21 .right .main-details h2{
+    margin-bottom: 1rem;
+    color: black;
+}
+.card-21 .right .main-details .rating{
+    margin-bottom: 0.5rem;
+}
+.card-21 .right .main-details .checked{
+    color: orangered;
+}
+.card-21 .right .main-details .rating h4{
+    font-size: 1.2rem;
+}
+.card-21 .right .main-details .vertical-box .check h2{
+    margin-top: 1rem;
+}
+.card-21 .right .main-details .vertical-box .check input{
+    padding: 0.5rem 1.5rem;
+    margin-right: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+.card-21 .right .main-details .vertical-box .check .g{
+    width: 3rem;
+}
+.card-21 .right .main-details .vertical-box .check button{
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    color: white;
+    background-color: black;
+}
+.card-21 .right .main-details .vertical-box .check button:hover{
+    background-color: rgb(133, 255, 147);
+    color: black;
+    transition: all 0.3s ease-in-out ;
+}
+.card-21 .right .rating-cleanliness h2{
+    margin-top: 1rem;  
+    color: black;
+}
+.card-21 .right .rating-cleanliness .couples h3{
+    position: absolute;
+    margin-top: -0.15rem;
+}
+.card-21 .right .rating-cleanliness .families h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-21 .right .rating-cleanliness .solo h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-21 .right .rating-cleanliness .business h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-21 .right .vertical-box .room h2{
+    margin-top: 1rem;
+    color: black;
+}
+.card-21 .right .vertical-box .room .r{
+    display: flex;
+    align-items: center;
+}
+
+/*card-22*/
+.card-22 .left{
+    position: absolute;
+}
+.card-22{
+    margin: 2rem 0 0 5rem;
+}
+.card-22 .left .main .main-head h1{
+    margin-bottom:0.5rem;
+    color: black;
+}
+.card-22 .left .main .main-head .pointer{
+    margin-bottom: 0.5rem;
+}
+.card-22 .left .main .main-head .pointer i{
+    position: absolute;
+}
+.card-22 .left .main .main-head .pointer a{
+    padding-left: 0.5rem;
+    text-decoration: none;
+    color: black;
+}
+.card-22 .left .main .main-head .pointer a::after{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 0;
+    margin-left: 1.5rem;
+    background-color: black;
+    transition: all 0.5s ease-in-out;
+}
+.card-22 .left .main .main-head .pointer a:hover::after{
+    width:38.4%;
+}
+.card-22 .left .c-1{
+    max-width: 550px;
+    width: 100%;
+}
+.card-22 .left .carousel-img-list{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 1rem;
+    font-size: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+}
+.card-22 .left .carousel-img-list::-webkit-scrollbar{
+    display: none;
+}
+.card-22 .left .carousel-img-list .image-item{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.card-22 .right{
+    margin-top: 1rem;
+    margin-left: 37rem;
+    width:49rem;
+}
+.card-22 .right .main-details h2{
+    margin-bottom: 1rem;
+    color: black;
+}
+.card-22 .right .main-details .rating{
+    margin-bottom: 0.5rem;
+}
+.card-22 .right .main-details .checked{
+    color: orangered;
+}
+.card-22 .right .main-details .rating h4{
+    font-size: 1.2rem;
+}
+.card-22 .right .main-details .vertical-box .check h2{
+    margin-top: 1rem;
+}
+.card-22 .right .main-details .vertical-box .check input{
+    padding: 0.5rem 1.5rem;
+    margin-right: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+.card-22 .right .main-details .vertical-box .check .g{
+    width: 3rem;
+}
+.card-22 .right .main-details .vertical-box .check button{
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    color: white;
+    background-color: black;
+}
+.card-22 .right .main-details .vertical-box .check button:hover{
+    background-color: rgb(133, 255, 147);
+    color: black;
+    transition: all 0.3s ease-in-out ;
+}
+.card-22 .right .rating-cleanliness h2{
+    margin-top: 1rem;  
+    color: black;
+}
+.card-22 .right .rating-cleanliness .couples h3{
+    position: absolute;
+    margin-top: -0.15rem;
+}
+.card-22 .right .rating-cleanliness .families h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-22 .right .rating-cleanliness .solo h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-22 .right .vertical-box .room h2{
+    margin-top: 1rem;
+    color: black;
+}
+.card-22 .right .vertical-box .room .r{
+    display: flex;
+    align-items: center;
+}
+
+/*card-23*/
+.card-23 .left{
+    position: absolute;
+}
+.card-23{
+    margin: 2rem 0 0 5rem;
+}
+.card-23 .left .main .main-head h1{
+    margin-bottom:0.5rem;
+    color: black;
+}
+.card-23 .left .main .main-head .pointer{
+    margin-bottom: 0.5rem;
+}
+.card-23 .left .main .main-head .pointer i{
+    position: absolute;
+}
+.card-23 .left .main .main-head .pointer a{
+    padding-left: 0.5rem;
+    text-decoration: none;
+    color: black;
+}
+.card-23 .left .main .main-head .pointer a::after{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 0;
+    margin-left: 1.5rem;
+    background-color: black;
+    transition: all 0.5s ease-in-out;
+}
+.card-23 .left .main .main-head .pointer a:hover::after{
+    width:38.4%;
+}
+.card-23 .left .c-1{
+    max-width: 550px;
+    width: 100%;
+}
+.card-23 .left .carousel-img-list{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 1rem;
+    font-size: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+}
+.card-23 .left .carousel-img-list::-webkit-scrollbar{
+    display: none;
+}
+.card-23 .left .carousel-img-list .image-item{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.card-23 .right{
+    margin-top: 1rem;
+    margin-left: 37rem;
+    width:49rem;
+}
+.card-23 .right .main-details h2{
+    margin-bottom: 1rem;
+    color: black;
+}
+.card-23 .right .main-details .rating{
+    margin-bottom: 0.5rem;
+}
+.card-23 .right .main-details .checked{
+    color: orangered;
+}
+.card-23 .right .main-details .rating h4{
+    font-size: 1.2rem;
+}
+.card-23 .right .main-details .vertical-box .check h2{
+    margin-top: 1rem;
+}
+.card-23 .right .main-details .vertical-box .check input{
+    padding: 0.5rem 1.5rem;
+    margin-right: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+.card-23 .right .main-details .vertical-box .check .g{
+    width: 3rem;
+}
+.card-23 .right .main-details .vertical-box .check button{
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    color: white;
+    background-color: black;
+}
+.card-23 .right .main-details .vertical-box .check button:hover{
+    background-color: rgb(133, 255, 147);
+    color: black;
+    transition: all 0.3s ease-in-out ;
+}
+.card-23 .right .rating-cleanliness h2{
+    margin-top: 1rem;  
+    color: black;
+}
+.card-23 .right .rating-cleanliness .couples h3{
+    position: absolute;
+    margin-top: -0.15rem;
+}
+.card-23 .right .rating-cleanliness .families h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-23 .right .rating-cleanliness .solo h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-23 .right .rating-cleanliness .business h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-23 .right .vertical-box .room h2{
+    margin-top: 1rem;
+    color: black;
+}
+.card-23 .right .vertical-box .room .r{
+    display: flex;
+    align-items: center;
+}
+
+/*card-24*/
+.card-24 .left{
+    position: absolute;
+}
+.card-24{
+    margin: 2rem 0 0 5rem;
+}
+.card-24 .left .main .main-head h1{
+    margin-bottom:0.5rem;
+    color: black;
+}
+.card-24 .left .main .main-head .pointer{
+    margin-bottom: 0.5rem;
+}
+.card-24 .left .main .main-head .pointer i{
+    position: absolute;
+}
+.card-24 .left .main .main-head .pointer a{
+    padding-left: 0.5rem;
+    text-decoration: none;
+    color: black;
+}
+.card-24 .left .main .main-head .pointer a::after{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 0;
+    margin-left: 1.5rem;
+    background-color: black;
+    transition: all 0.5s ease-in-out;
+}
+.card-24 .left .main .main-head .pointer a:hover::after{
+    width:38.4%;
+}
+.card-24 .left .c-1{
+    max-width: 550px;
+    width: 100%;
+}
+.card-24 .left .carousel-img-list{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 1rem;
+    font-size: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+}
+.card-24 .left .carousel-img-list::-webkit-scrollbar{
+    display: none;
+}
+.card-24 .left .carousel-img-list .image-item{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.card-24 .right{
+    margin-top: 1rem;
+    margin-left: 37rem;
+    width:49rem;
+}
+.card-24 .right .main-details h2{
+    margin-bottom: 1rem;
+    color: black;
+}
+.card-24 .right .main-details .rating{
+    margin-bottom: 0.5rem;
+}
+.card-24 .right .main-details .checked{
+    color: orangered;
+}
+.card-24 .right .main-details .rating h4{
+    font-size: 1.2rem;
+}
+.card-24 .right .main-details .vertical-box .check h2{
+    margin-top: 1rem;
+}
+.card-24 .right .main-details .vertical-box .check input{
+    padding: 0.5rem 1.5rem;
+    margin-right: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+.card-24 .right .main-details .vertical-box .check .g{
+    width: 3rem;
+}
+.card-24 .right .main-details .vertical-box .check button{
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    color: white;
+    background-color: black;
+}
+.card-24 .right .main-details .vertical-box .check button:hover{
+    background-color: rgb(133, 255, 147);
+    color: black;
+    transition: all 0.3s ease-in-out ;
+}
+.card-24 .right .rating-cleanliness h2{
+    margin-top: 1rem;  
+    color: black;
+}
+.card-24 .right .rating-cleanliness .couples h3{
+    position: absolute;
+    margin-top: -0.15rem;
+}
+.card-24 .right .rating-cleanliness .families h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-24 .right .rating-cleanliness .solo h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-24 .right .rating-cleanliness .business h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-24 .right .vertical-box .room h2{
+    margin-top: 1rem;
+    color: black;
+}
+.card-24 .right .vertical-box .room .r{
+    display: flex;
+    align-items: center;
+}
+/*card-25*/
+.card-25 .left{
+    position: absolute;
+}
+.card-25{
+    margin: 2rem 0 0 5rem;
+}
+.card-25 .left .main .main-head h1{
+    margin-bottom:0.5rem;
+    color: black;
+}
+.card-25 .left .main .main-head .pointer{
+    margin-bottom: 0.5rem;
+}
+.card-25 .left .main .main-head .pointer i{
+    position: absolute;
+}
+.card-25 .left .main .main-head .pointer a{
+    padding-left: 0.5rem;
+    text-decoration: none;
+    color: black;
+}
+.card-25 .left .main .main-head .pointer a::after{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 0;
+    margin-left: 1.5rem;
+    background-color: black;
+    transition: all 0.5s ease-in-out;
+}
+.card-25 .left .main .main-head .pointer a:hover::after{
+    width:38.4%;
+}
+.card-25 .left .c-1{
+    max-width: 550px;
+    width: 100%;
+}
+.card-25 .left .carousel-img-list{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 1rem;
+    font-size: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+}
+.card-25 .left .carousel-img-list::-webkit-scrollbar{
+    display: none;
+}
+.card-25 .left .carousel-img-list .image-item{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.card-25 .right{
+    margin-top: 1rem;
+    margin-left: 37rem;
+    width:49rem;
+}
+.card-25 .right .main-details h2{
+    margin-bottom: 1rem;
+    color: black;
+}
+.card-25 .right .main-details .rating{
+    margin-bottom: 0.5rem;
+}
+.card-25 .right .main-details .checked{
+    color: orangered;
+}
+.card-25 .right .main-details .rating h4{
+    font-size: 1.2rem;
+}
+.card-25 .right .main-details .vertical-box .check h2{
+    margin-top: 1rem;
+}
+.card-25 .right .main-details .vertical-box .check input{
+    padding: 0.5rem 1.5rem;
+    margin-right: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+.card-25 .right .main-details .vertical-box .check .g{
+    width: 3rem;
+}
+.card-25 .right .main-details .vertical-box .check button{
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    color: white;
+    background-color: black;
+}
+.card-25 .right .main-details .vertical-box .check button:hover{
+    background-color: rgb(133, 255, 147);
+    color: black;
+    transition: all 0.3s ease-in-out ;
+}
+.card-25 .right .rating-cleanliness h2{
+    margin-top: 1rem;  
+    color: black;
+}
+.card-25 .right .rating-cleanliness .couples h3{
+    position: absolute;
+    margin-top: -0.15rem;
+}
+.card-25 .right .rating-cleanliness .families h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-25 .right .rating-cleanliness .solo h3{
+    position: absolute;
+    margin-top: -0.12rem;
+}
+.card-25 .right .vertical-box .room h2{
+    margin-top: 1rem;
+    color: black;
+}
+.card-25 .right .vertical-box .room .r{
+    display: flex;
+    align-items: center;
+}
+/*container ends here*/
+footer{
+    /* margin-top: 10rem; */
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+footer .designed{
+    cursor: alias;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    margin-left: 0.3rem;
+    margin-top: 2rem;
+}
+footer .link h1{
+    font-family: 'Dancing Script',cursive;
+    padding-bottom: 0.2rem;
+}
+footer .link a{
+    text-decoration: none;
+    color:black; 
+    font-size: 1.5rem;
+    margin-right: 3rem;
+}
+.cr{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+.cr h1{
+    padding-top: 1rem;
+    font-size: 0.8rem;
+    font-weight: lighter;
+}
+.cr ul{
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+    font-size: 0.9rem;
+}
+.cr ul a{
+    text-decoration: none;
+    color: black;
+}

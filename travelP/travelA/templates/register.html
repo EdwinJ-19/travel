@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Account</title>
+    <link href="{%static 'img/plane.svg'%}" rel="icon" type="img/icons">
+    <!--CSS LINK-->
+    <link href="{%static 'css/register.css'%}" rel="stylesheet" type="text/css">
+     <!--GOOGLE FONTS-->
+     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Oswald:wght@200;300;400&family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Raleway&display=swap" rel="stylesheet">
+    <!--Fontawesome icon-->
+    <script src="{% static 'fontawesomefree/js/all.min.js' %}"></script>
+    <!--JS LINK-->
+    <!-- <script src="{%static 'js/script.js'%}"></script> -->
+</head>
+<body>
+    <nav>
+        <div class="nav-header">
+            <!-- <img src="{%static 'img/T&T.png'%}" style="width: 5rem;"> -->
+            <h1>Travel & Tourism</h1>
+        </div>
+    </nav>
+    
+    <container>
+        <div class="login-box">
+            <div class="login-head">
+                <h1>New Account</h1>
+            </div>
+            <div class="login-input">
+                <input type="text" placeholder="Enter your Email" required><br>
+                <input type="text" placeholder="Enter Your Username"><br>
+                <input type="password" placeholder="Enter Your Password" required><br>
+                <input type="password" placeholder="Enter your Password Again" required><br>
+                <input type="text" placeholder="Enter your Place" required>
+                <div class="login-btn">
+                    <button type="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+    </container>
+    
+    <footer>
+        <div class="link">
+            <h1>Follow Us</h1>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-github"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-discord"></i></a>
+        </div>
+
+        <div class="cr">
+            <h1>&copy; 2023 Travel and Tours Co., Ltd. All rights reserved | Designed by<a href="https://github.com/EdwinJ-19" class="designed"><i class="fa-brands fa-github"></i>.</a></h1>
+            <div class="t&c">
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Legal</a></li>
+                    <li><a href="#">Terms & Condition</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
