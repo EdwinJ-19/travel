@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', sans-serif;
+}
+body{
+    background-image: linear-gradient(315deg, #f0fff0 0%, #f5f5f5 74%);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: black;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+.nav-header{
+    margin-left: 5rem;
+}
+nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .nav-button ul{
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+    margin-right: 5rem;
+}
+.nav-button li a{
+    text-decoration: none;
+    color: black;
+}
+nav .nav-button ul li:hover{
+    transform: translateY(-2px);
+    transition: transform 0.3s ease-in-out;
+}
+/* .nav-button li .active{
+    font-weight: bolder;
+} */
+.nav-button .book a{
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 0.2rem 1.2rem;
+}
+.nav-button .book a:hover{
+    background-color: navy;
+    color:white;
+    transition: all 0.3s ease-in-out;
+    font-weight: bolder;
+}
+/*hotels dropdown hover starts*/
+nav ul li:hover ul.dropdown{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    padding: 1rem;
+}
+nav ul li .dropdown li{
+    text-align: center;
+    padding-top: 0.5rem;
+}
+nav ul li .dropdown {
+    position: absolute;
+    z-index: 500;
+    display: none;
+    transition: transform 0.5s ease-in-out;
+    background-image: linear-gradient(315deg, #f0fff0 0%, #f5f5f5 74%);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    backdrop-filter: blur(5rem);
+}
+nav ul li .dropdown a{
+    color: white;
+    padding-bottom: 1rem;
+    color: black;
+}
+nav ul li a:hover{
+    transform: translateY(-2px);
+}
+nav ul .dropdown img{
+    width: 10rem;
+    height: 10rem;
+    position: relative;
+    margin-top: 0.5rem;
+    object-fit: cover;
+}
+/*hotels dropdown hover ends*/
+/*experience dropdown hover starts*/
+nav ul li:hover ul.dropdown-1{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    padding: 1rem;
+}
+nav ul li .dropdown-1 li{
+    text-align: center;
+    padding-top: 0.5rem;
+}
+nav ul li .dropdown-1 {
+    position: absolute;
+    z-index: 500;
+    display: none;
+    transition: transform 0.5s ease-in-out;
+    background-color: white;
+}
+nav ul li .dropdown-1 a{
+    color: white;
+    padding-bottom: 1rem;
+    color: black;
+}
+nav ul li a:hover{
+    transform: translateY(-2px);
+}
+nav ul .dropdown-1 img{
+    width: 10rem;
+    height: 10rem;
+    position: relative;
+    margin-top: 0.5rem;
+    object-fit: cover;
+}
+/*experience dropdown hover ends*/
+
+/* HotelHeading(name and price), images, address, Check in, check out, total amount*/
+container{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+container .g-1{
+    padding: 1rem;
+}
+container .g-1 .g-head{
+    display: flex;
+    align-items: center;
+    gap: 7rem;
+}
+container .g-1 .g-image img{
+    display: flex;
+    margin: auto;
+    width: 25rem;
+    margin-top: 1rem;
+}
+container .g-1 .g-box{
+    display: block;
+    margin: auto;
+    width: 80%;
+    margin-top: 1rem;
+}
+container .g-1 .g-box .box-1 input{
+    border: none;
+    padding: 0.5rem 6rem;
+    text-align: center;
+}
+container .g-1 .g-box .box-2{
+    margin-top: 1rem;
+}
+container .g-1 .g-box .box-2 input{
+    border: none;
+    padding: 0.5rem 6rem;
+    text-align: center;
+}
+container .g-1 .g-box .box-3{
+    margin-top: 1rem;
+}
+container .g-1 .g-box .box-3 p{
+    padding: 0.5rem 6rem;
+    text-align: center;
+}
+container .g-2{
+    padding: 1rem;
+    font-size: 1rem;
+}
+container .g-2 .radio-1{
+    padding: 1rem 0;
+}
+container .g-2 .radio-2{
+    padding-bottom: 1rem;
+}
+container .g-2 .input{
+    padding-bottom: 1rem;
+}
+container .g-2 .input p{
+    padding-bottom: 0.5rem;
+}
+container .g-2 .input input{
+    border: none;
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
+container .g-2 button{
+    border: none;
+    padding: 0.2rem 1rem;
+    background-color: white;
+}
+container .g-2 button:hover{
+    background-color: rgb(75, 75, 255);
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+container .pointer{
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+}
+container .pointer i{
+    position: absolute;
+}
+container .pointer a{
+    text-decoration: none;
+    color: black;
+}
+container .pointer a::after{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 0;
+    margin-left: 1rem;
+    background-color: black;
+    transition: all 0.5s ease-in-out;
+}
+container .pointer a:hover::after{
+    width:51%;
+}
+footer{
+    margin-top: 5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+footer .designed{
+    cursor: alias;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    margin-left: 0.3rem;
+    margin-top: 2rem;
+}
+footer .link h1{
+    font-family: 'Dancing Script',cursive;
+    padding-bottom: 0.2rem;
+}
+footer .link a{
+    text-decoration: none;
+    color:black; 
+    font-size: 1.5rem;
+    margin-right: 3rem;
+}
+.cr{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+.cr h1{
+    padding-top: 1rem;
+    font-size: 0.8rem;
+    font-weight: lighter;
+}
+.cr ul{
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+    font-size: 0.9rem;
+}
+.cr ul a{
+    text-decoration: none;
+    color: black;
+}

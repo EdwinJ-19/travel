@@ -13,3 +13,5 @@ def team(request):
     return render(request,'about.html')
 def trip(request):
     return render(request,'trip.html')
+def payment(request):
+    return render(request,'payment.html')

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <!--tabicon-->
+    <link href="{%static 'img/plane.svg'%}" rel="icon" type="icon/css">
+    <!--CSS LINK-->
+    <link href="{%static 'css/payment.css'%}" rel="stylesheet" type="text/css">
+     <!--GOOGLE FONTS-->
+     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Raleway&family=Single+Day&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Raleway&family=Single+Day&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Raleway&family=Single+Day&display=swap" rel="stylesheet">
+    <!--Fontawesome icon-->
+    <script src="{% static 'fontawesomefree/js/all.min.js' %}"></script>
+    <!--javascript button-->
+    <!-- <script src="{%static 'js/script.js'%}"></script> -->
+</head>
+<body>
+    <nav>
+        <div class="nav-header">
+            <img src="{%static 'img/T&T.png'%}" style="width: 5rem;">
+            <!-- <h1>Travel & Tourism</h1> -->
+        </div>
+        <div class="nav-button">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Hotels</a>
+                <ul class="dropdown" style="margin-left: -45rem; margin-top: 0.5rem;">
+                    <li><a href="#">Mumbai</a><img src="{%static 'img/hotel_nav/mum.jpg'%}"></li>
+                    <li><a href="#">Udaipur</a><img src="{%static 'img/hotel_nav/udai.jpeg'%}"></li>
+                    <li><a href="#">Gurugram</a><img src="{%static 'img/hotel_nav/gurugram.jpg'%}"></li>
+                    <li><a href="#">Jaipur</a><img src="{%static 'img/hotel_nav/jaipur.jpg'%}"></li>
+                    <li><a href="#">Delhi</a><img src="{%static 'img/hotel_nav/delhi.jpg'%}"></li>
+                    <li><a href="#">Bengaluru</a><img src="{%static 'img/hotel_nav/bengaluru.jpg'%}"></li>
+                    <li><a href="#">Gandhinagar</a><img src="{%static 'img/hotel_nav/gandhinagar.jpg'%}"></li>
+                    <li><a href="#">Chennai</a><img src="{%static 'img/hotel_nav/chennai.jpeg'%}"></li>
+                    <li><a href="#">Ashtamudi</a><img src="{%static 'img/hotel_nav/ashtamudi.jpg'%}"></li>
+                </ul>
+            </li>
+            <li><a href="#">Experience</a>
+                <ul class="dropdown-1" style="margin-left: -50rem; margin-top: 0.5rem;">
+                    <li><a href="#">Art</a><img src="{%static 'img/exp_nav/art.avif'%}"></li>
+                    <li><a href="#">Culinary</a><img src="{%static 'img/exp_nav/cul.avif'%}"></li>
+                    <li><a href="#">Leisure</a><img src="{%static 'img/exp_nav/leisure.avif'%}"></li>
+                    <li><a href="#">Romance</a><img src="{%static 'img/exp_nav/romance.jpg'%}"></li>
+                    <li><a href="#">Wellness</a><img src="{%static 'img/exp_nav/wellness.avif'%}"></li>
+                </ul>
+            </li>
+            <li class="book"><a href="#">BOOK</a></li>
+        </ul>
+        </div>
+    </nav>
+
+    <!-- HotelHeading(name and price), images, address, Check in, check out, total amount -->
+    <container>
+        <div class="g-1">
+            <div class="g-head">
+                <h2>Hotel Margarita</h2>
+                <p>Rs.9,094 (per night)</p>
+            </div>
+            <div class="g-image">
+                <img src="{%static 'img/mar_hotel/main.jpg'%}" alt="main">
+            </div>
+            <div class="pointer">
+                <i class="fa-solid fa-location-dot"></i>
+                <a href="https://maps.app.goo.gl/GqRmnbnjNUfFCYxA6" target="_blank">Main Street,Santorini,Greece</a>
+            </div>
+            <div class="g-box">
+                <div class="box-1">
+                    <input type="text" placeholder="Check-In" onfocus="(this.type=date)" min="2023-12-28" max="2024-01-28">
+                </div>
+                <div class="box-2">
+                    <input type="text" placeholder="Check-Out" onfocus="(this.type=date)" min="2023-12-28" max="2024-01-28">
+                </div>
+                <div class="box-3">
+                    <p>Total Amount:</p>
+                </div>
+            </div>
+        </div>
+        <div class="g-2">
+            <div class="radio-1">
+                <p>Who are you booking for?</p>
+                <input type="radio"> I am the main guest<br>
+                <input type="radio"> Booking for someone else
+            </div>
+            <div class="radio-2">
+                <p>Travelling for work?</p>
+                <input type="radio"> Yes<br>
+                <input type="radio"> No
+            </div>
+            <div class="input">
+                <p>Guest Full Name</p>
+                <input type="text" placeholder="Guest Full Name">
+            </div>
+            <button type="button">Proceed</button>
+        </div>
+    </container>
+
+    <footer>
+
+        <div class="link">
+            <h1>Follow Us</h1>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-github"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-discord"></i></a>
+        </div>
+
+        <div class="cr">
+            <h1>&copy; 2023 Travel and Tours Co., Ltd. All rights reserved | Designed by<a href="https://github.com/EdwinJ-19" class="designed"><i class="fa-brands fa-github"></i>.</a></h1>
+            <div class="t&c">
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Legal</a></li>
+                    <li><a href="#">Terms & Condition</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+</body>
+</html>
