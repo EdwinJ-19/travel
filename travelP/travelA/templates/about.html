@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <!--tabicon-->
+    <link href="{%static 'img/plane.svg'%}" rel="icon" type="icon/css">
+    <!--CSS LINK-->
+    <link href="{%static 'css/about.css'%}" rel="stylesheet" type="text/css">
+     <!--GOOGLE FONTS-->
+     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Raleway&family=Single+Day&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Raleway&family=Single+Day&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Raleway&family=Single+Day&display=swap" rel="stylesheet">
+    <!--Fontawesome icon-->
+    <script src="{% static 'fontawesomefree/js/all.min.js' %}"></script>
+    <!--javascript button-->
+    <!-- <script src="{%static 'js/script.js'%}"></script> -->
+</head>
+<body>
+    <nav>
+        <div class="nav-header">
+            <img src="{%static 'img/T&T.png'%}" style="width: 5rem;">
+            <!-- <h1>Travel & Tourism</h1> -->
+        </div>
+        <div class="nav-button">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#" class="active">About</a></li>
+            <li><a href="#">Hotels</a>
+                <ul class="dropdown" style="margin-left: -45rem; margin-top: 0.5rem;">
+                    <li><a href="#">Mumbai</a><img src="{%static 'img/hotel_nav/mum.jpg'%}"></li>
+                    <li><a href="#">Udaipur</a><img src="{%static 'img/hotel_nav/udai.jpeg'%}"></li>
+                    <li><a href="#">Gurugram</a><img src="{%static 'img/hotel_nav/gurugram.jpg'%}"></li>
+                    <li><a href="#">Jaipur</a><img src="{%static 'img/hotel_nav/jaipur.jpg'%}"></li>
+                    <li><a href="#">Delhi</a><img src="{%static 'img/hotel_nav/delhi.jpg'%}"></li>
+                    <li><a href="#">Bengaluru</a><img src="{%static 'img/hotel_nav/bengaluru.jpg'%}"></li>
+                    <li><a href="#">Gandhinagar</a><img src="{%static 'img/hotel_nav/gandhinagar.jpg'%}"></li>
+                    <li><a href="#">Chennai</a><img src="{%static 'img/hotel_nav/chennai.jpeg'%}"></li>
+                    <li><a href="#">Ashtamudi</a><img src="{%static 'img/hotel_nav/ashtamudi.jpg'%}"></li>
+                </ul>
+            </li>
+            <li><a href="#">Experience</a>
+                <ul class="dropdown-1" style="margin-left: -50rem; margin-top: 0.5rem;">
+                    <li><a href="#">Art</a><img src="{%static 'img/exp_nav/art.avif'%}"></li>
+                    <li><a href="#">Culinary</a><img src="{%static 'img/exp_nav/cul.avif'%}"></li>
+                    <li><a href="#">Leisure</a><img src="{%static 'img/exp_nav/leisure.avif'%}"></li>
+                    <li><a href="#">Romance</a><img src="{%static 'img/exp_nav/romance.jpg'%}"></li>
+                    <li><a href="#">Wellness</a><img src="{%static 'img/exp_nav/wellness.avif'%}"></li>
+                </ul>
+            </li>
+            <li class="book"><a href="#">BOOK</a></li>
+        </ul>
+        </div>
+    </nav>
+
+    <container>
+        <div class="team-head">
+            <h1>Team Narcos</h1>
+        </div>
+
+        <h1 style="text-align: center; margin-top: 2rem; font-family: 'Single Day', cursive;  font-size: 3rem;">Operator</h1>
+        <div class="team-guide">
+            <div class="g-1">
+                <img src="{%static 'img/team/akansha.jpeg'%}">
+                <h4>Akanksha </h4>
+                <p>ITVedant Guide</p>
+                <div class="social-link">
+                    <a href="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="linkedin">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="github">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="g-1">
+                <img src="{%static 'img/team/e.jpeg'%}">
+                <h4>Edwin James John</h4>
+                <p>ItVedant Guide</p>
+                <div class="social-link">
+                    <a href="linkedin">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="github">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <h1 style="text-align: center; margin-top: 2rem; font-family: 'Single Day', cursive; font-size: 3rem;" >Dossiers Team</h1>
+        <div class="team-data">
+            <div class="g-1">
+                <img src="{%static 'img/team/kaustabha.jpg'%}">
+                <h4>Kaustabha Gawas</h4>
+                <p>Data Science with Analytics</p>
+                <div class="social-link">
+                    <a href="linkedin">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="github">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="g-1">
+                <img src="{%static 'img/team/sakshi.jpg'%}">
+                <h4>Sakshi Waman</h4>
+                <p>Data Science with Analytics</p>
+                <div class="social-link">
+                    <a href="linkedin">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="github">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="g-1">
+                <img src="{%static 'img/team/e.jpeg'%}">
+                <h4>Edwin James John</h4>
+                <p>Front-End Developer</p>
+                <div class="social-link">
+                    <a href="linkedin">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="github">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="g-1">
+                <img src="{%static 'img/team/e.jpeg'%}">
+                <h4>Edwin James John</h4>
+                <p>Front-End Developer</p>
+                <div class="social-link">
+                    <a href="linkedin">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="github">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <h1 style="text-align: center; margin-top: 2rem; font-family: 'Single Day', cursive; font-size: 3rem">Producer Team</h1>
+        <div class="team-developer">
+            <div class="g-1">
+                <img src="{%static 'img/team/e.jpeg'%}">
+                <h4>Edwin James John</h4>
+                <p>Front-End Developer</p>
+                <div class="social-link">
+                    <a href="linkedin">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="github">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="g-1">
+                <img src="{%static 'img/team/e.jpeg'%}">
+                <h4>Edwin James John</h4>
+                <p>Front-End Developer</p>
+                <div class="social-link">
+                    <a href="linkedin">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="github">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="g-1">
+                <img src="{%static 'img/team/e.jpeg'%}">
+                <h4>Edwin James John</h4>
+                <p>Front-End Developer</p>
+                <div class="social-link">
+                    <a href="linkedin">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="github">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="g-1">
+                <img src="{%static 'img/team/e.jpeg'%}">
+                <h4>Edwin James John</h4>
+                <p>Front-End Developer</p>
+                <div class="social-link">
+                    <a href="linkedin">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="github">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <h1 style="text-align: center; margin-top: 2rem; font-family: 'Single Day', cursive; font-size: 3rem;">Operational Data Control Team</h1>
+        <div class="team-data-handling">
+            <div class="g-1">
+                <img src="{%static 'img/team/e.jpeg'%}">
+                <h4>Edwin James John</h4>
+                <p>Front-End Developer</p>
+                <div class="social-link">
+                    <a href="linkedin">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="github">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="g-1">
+                <img src="{%static 'img/team/e.jpeg'%}">
+                <h4>Edwin James John</h4>
+                <p>Front-End Developer</p>
+                <div class="social-link">
+                    <a href="linkedin">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="github">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="g-1">
+                <img src="{%static 'img/team/e.jpeg'%}">
+                <h4>Edwin James John</h4>
+                <p>Front-End Developer</p>
+                <div class="social-link">
+                    <a href="linkedin">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="github">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="g-1">
+                <img src="{%static 'img/team/e.jpeg'%}">
+                <h4>Edwin James John</h4>
+                <p>Front-End Developer</p>
+                <div class="social-link">
+                    <a href="linkedin">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="github">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </container>
+
+    <footer>
+
+        <div class="link">
+            <h1>Follow Us</h1>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-github"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-discord"></i></a>
+        </div>
+
+        <div class="cr">
+            <h1>&copy; 2023 Travel and Tours Co., Ltd. All rights reserved | Designed by<a href="https://github.com/EdwinJ-19" class="designed"><i class="fa-brands fa-github"></i>.</a></h1>
+            <div class="t&c">
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Legal</a></li>
+                    <li><a href="#">Terms & Condition</a></li>
+                </ul>
+            </div>
+        </div>
+
+</footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>

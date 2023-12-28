@@ -9,3 +9,7 @@ def home(request):
     return render(request,'main.html')
 def hotel(request):
     return render(request,'hotelacc.html')
+def team(request):
+    return render(request,'about.html')
+def trip(request):
+    return render(request,'trip.html')

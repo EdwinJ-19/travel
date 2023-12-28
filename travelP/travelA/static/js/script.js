@@ -30,3 +30,7 @@ const initSlider = () =>{
 function btn(){
     window.location.href='hotelacc'
 }
+
+function btn_2(){
+    window.location.href='team'
+}
